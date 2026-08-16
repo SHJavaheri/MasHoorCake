@@ -54,7 +54,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             className="rounded-sm transition-opacity hover:opacity-70"
             aria-label={dict.nav.home}
           >
-            <Wordmark className="h-7 w-auto" />
+            <Wordmark className="h-12 w-auto" />
           </Link>
         </SprinkleBurst>
 

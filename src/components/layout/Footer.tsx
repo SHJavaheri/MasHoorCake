@@ -20,7 +20,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Wordmark className="h-7 w-auto" />
+            <Wordmark className="h-20 w-auto" />
             <p className="text-text-muted mt-5 max-w-sm text-sm">{site.description[locale]}</p>
             <p className="text-text-subtle mt-4 text-sm">{site.serviceArea[locale]}</p>
           </div>

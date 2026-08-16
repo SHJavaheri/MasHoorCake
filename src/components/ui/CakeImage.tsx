@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import imageManifest from "@/content/generated/images.json";
 import { asset } from "@/lib/images/assetPath";
@@ -47,7 +47,18 @@ export function CakeImage({
   imgClassName?: string;
 }) {
   const [loaded, setLoaded] = useState(false);
+  const imageRef = useRef<HTMLImageElement>(null);
   const entry = manifest[name];
+
+  // On a hard refresh a browser can complete a cached image before React
+  // hydrates and attaches `onLoad`. In that case the event never fires and the
+  // LQIP would remain visible indefinitely. `complete` closes that gap.
+  useEffect(() => {
+    const image = imageRef.current;
+    if (image?.complete && image.naturalWidth > 0) {
+      setLoaded(true);
+    }
+  }, [name]);
 
   if (!entry) {
     // Fails loudly in development, quietly in production: a missing photo
@@ -88,6 +99,7 @@ export function CakeImage({
         <source type="image/avif" srcSet={srcSet(entry.avif)} sizes={sizes} />
         <source type="image/webp" srcSet={srcSet(entry.webp)} sizes={sizes} />
         <img
+          ref={imageRef}
           src={asset(entry.fallback)}
           alt={alt}
           width={entry.width}
