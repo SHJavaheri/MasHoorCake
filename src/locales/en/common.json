@@ -22,28 +22,173 @@
     "switchTo": "Switch to {language}"
   },
   "home": {
+    "eyebrow": "Custom cakes, made to order",
     "heroTitle": "Cakes worth the occasion",
     "heroSubtitle": "Bespoke celebration cakes, baked and finished by hand in small batches.",
     "heroCtaPrimary": "Start an Order",
     "heroCtaSecondary": "See the Gallery",
-    "scrollCue": "Scroll to explore"
+    "scrollCue": "Scroll",
+    "signatureTitle": "Recent work",
+    "signatureIntro": "A few cakes from the last few months.",
+    "processTitle": "How it works",
+    "processIntro": "Four steps from first message to the table.",
+    "occasionsTitle": "Made for the moment",
+    "occasionsIntro": "Every celebration asks for something different.",
+    "testimonialsTitle": "In their words",
+    "ctaTitle": "Let's make something for your celebration",
+    "ctaBody": "Tell us the date and roughly how many people you're feeding. We'll take it from there.",
+    "viewAll": "View the full gallery"
   },
+  "process": [
+    {
+      "title": "Tell us about it",
+      "body": "Send the date, roughly how many people, and any flavours or images you're drawn to. A rough idea is enough to start."
+    },
+    {
+      "title": "We design it together",
+      "body": "We'll come back with a direction, a flavour pairing, and a price. Nothing is locked in until you're happy with it."
+    },
+    {
+      "title": "It gets baked",
+      "body": "Everything is made fresh in the days before your event. Nothing is frozen, nothing is made in advance."
+    },
+    {
+      "title": "Collection or delivery",
+      "body": "Pick it up chilled and boxed, or we'll deliver locally and set it up for you."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "It was the first thing every single guest mentioned. I've never had a cake actually taste as good as it looked.",
+      "author": "Placeholder name",
+      "occasion": "Wedding"
+    },
+    {
+      "quote": "I sent one blurry photo and a colour, and somehow got back exactly what I had in my head.",
+      "author": "Placeholder name",
+      "occasion": "Birthday"
+    },
+    {
+      "quote": "The saffron and pistachio tasted like my grandmother's kitchen. I wasn't expecting to be moved by a cake.",
+      "author": "Placeholder name",
+      "occasion": "Nowruz"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How far in advance should I order?",
+      "answer": "Two weeks is comfortable for most cakes, and four to six weeks for weddings and larger tiered work. Shorter notice is sometimes possible — it's always worth asking."
+    },
+    {
+      "question": "Can you work around allergies?",
+      "answer": "Often, yes. Nut-free and dairy-free are usually workable with notice. This is a home kitchen that handles nuts, dairy, gluten, and eggs, so we cannot guarantee an allergen-free environment."
+    },
+    {
+      "question": "Do you deliver?",
+      "answer": "Local delivery and setup can be arranged for tiered cakes. Single-tier cakes are usually collected."
+    },
+    {
+      "question": "How does payment work?",
+      "answer": "A deposit confirms your date, with the balance due before collection. Details are agreed directly when the order is confirmed."
+    },
+    {
+      "question": "Can you recreate a cake I've seen elsewhere?",
+      "answer": "We'll happily use a photo as a starting point, but we won't copy another baker's work outright. The result will be our interpretation of what you love about it."
+    }
+  ],
+  "aboutStory": [
+    "TODO(content): the baker's story goes here. Two or three paragraphs about how the bakery started, what drew you to cake specifically, and what you care about most when you're making one.",
+    "This is the highest-trust content on a home bakery site — customers are letting a stranger cook for their celebration. A photograph of you and a story in your own voice does more than any amount of design.",
+    "The Persian influences in this work aren't decorative. Saffron, rosewater, cardamom, and pistachio are the flavours of a childhood, and the geometry comes from tilework worth looking at closely."
+  ],
   "gallery": {
     "title": "The Gallery",
-    "intro": "A selection of cakes made for real celebrations.",
-    "filterBy": "Filter by",
+    "intro": "A selection of cakes made for real celebrations. Filter by occasion, style, flavour, or colour.",
+    "filterBy": "Filters",
     "clearFilters": "Clear all",
     "resultCount": "{count} cakes",
-    "empty": "No cakes match those filters yet.",
+    "empty": "No cakes match those filters yet. Try removing one.",
     "loadMore": "Show more",
     "orderSimilar": "Order something like this",
-    "close": "Close"
+    "close": "Close",
+    "previous": "Previous cake",
+    "next": "Next cake",
+    "categories": {
+      "occasions": "Occasion",
+      "styles": "Style",
+      "flavours": "Flavour",
+      "colorFamilies": "Colour"
+    },
+    "detailServings": "Serves",
+    "detailTiers": "Tiers",
+    "detailSize": "Size",
+    "detailPrice": "Price",
+    "detailFlavours": "Flavours & fillings",
+    "detailOccasion": "Occasion & style",
+    "detailIngredients": "Key ingredients",
+    "detailAllergens": "Contains"
+  },
+  "cakes": {
+    "title": "What We Make",
+    "intro": "Every cake is designed around one celebration. Nothing here is off a shelf.",
+    "sizeTitle": "How big do I need?",
+    "sizeIntro": "The question everyone asks first. Drag through the tiers to see how servings change.",
+    "tiersLabel": "Tiers",
+    "servingsLabel": "Serves roughly",
+    "sizeNote": "Portions assume standard dessert slices. Coffee-sized portions serve more.",
+    "flavourTitle": "The flavour library",
+    "flavourIntro": "Choose a sponge and a filling, or tell us what you love and we'll suggest a pairing.",
+    "flavourSponge": "Sponge",
+    "flavourFilling": "Filling",
+    "pairingNote": "Pairs especially well with {flavour}.",
+    "yourCombination": "Your combination",
+    "orderThis": "Enquire about this",
+    "pricingTitle": "Pricing",
+    "pricingIntro": "Custom work is priced per cake. These are honest starting points.",
+    "pricingNote": "Price rises with tiers, sugar flowers, sculpted work, and short notice.",
+    "policiesTitle": "Lead times & policies",
+    "leadTimeLabel": "Minimum notice",
+    "leadTimeValue": "{days} days for most cakes, longer for weddings",
+    "depositLabel": "Deposit",
+    "depositValue": "{percent}% to confirm your date",
+    "allergenLabel": "Allergens",
+    "allergenValue": "This is a home kitchen that handles nuts, dairy, gluten, and eggs. We can often work around specific allergies with notice, but cannot guarantee an allergen-free environment."
+  },
+  "about": {
+    "title": "The Baker",
+    "storyTitle": "How this started",
+    "processPhotosTitle": "Behind the bake",
+    "portraitAlt": "Portrait of the baker in the kitchen",
+    "recipeTrigger": "There is one thing I've never written down.",
+    "recipeTitle": "Grandmother's note",
+    "recipeBody": "TODO(content): a family saying, a scrap of a recipe, or a line of advice passed down. Something small and real — it does not need to be a whole recipe, only worth having found."
   },
   "order": {
     "title": "Start an Order",
-    "intro": "Tell us about your celebration and we'll take it from there.",
+    "intro": "Tell us about your celebration and we'll come back to you personally, usually within a day.",
+    "seededTitle": "You're enquiring about",
+    "seededClear": "Start fresh instead",
+    "checklistTitle": "What to have ready",
+    "checklistIntro": "The form is short. It helps to have these to hand.",
     "cta": "Open the order form",
-    "orContact": "Or reach out directly"
+    "ctaNote": "Opens in a new tab.",
+    "orContact": "Prefer to message instead?",
+    "notReadyTitle": "Not sure yet?",
+    "notReadyBody": "Have a look through previous work first — it's the easiest way to find a direction.",
+    "notReadyCta": "Browse the gallery",
+    "stepsTitle": "What happens next"
+  },
+  "thanks": {
+    "title": "Thank you",
+    "body": "Your enquiry is in. We'll be in touch personally, usually within a day.",
+    "cta": "Back to the gallery"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "intro": "The fastest way to reach us is Instagram or WhatsApp. We answer everything ourselves.",
+    "chatGreeting": "Hi! I'd like to ask about ordering a cake.",
+    "faqTitle": "Common questions",
+    "serviceAreaLabel": "Service area"
   },
   "footer": {
     "rights": "All rights reserved.",
@@ -58,6 +203,7 @@
     "from": "from",
     "priceOnRequest": "Price on request",
     "servings": "servings",
-    "loading": "Loading"
+    "loading": "Loading",
+    "placeholderNotice": "Placeholder content"
   }
 }

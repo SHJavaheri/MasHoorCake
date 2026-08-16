@@ -154,6 +154,15 @@
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
 
+  /*
+   * Colours for content sitting on top of a photograph. Deliberately identical
+   * in both themes: a scrim over a cake photo must stay dark and its text light
+   * regardless of the page theme, or the caption becomes unreadable in one of
+   * them. These are the only "non-semantic" colours components may use.
+   */
+  --color-scrim: var(--espresso-950);
+  --color-on-scrim: var(--bone-100);
+
   /* Typefaces are injected by next/font in the root layout. */
   --font-display: var(--font-display), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
@@ -187,6 +196,36 @@
   --duration-fast: 240ms;
   --duration-base: 400ms;
   --duration-slow: 700ms;
+
+  /*
+   * Accordion open/close. Driven by the height Radix measures and exposes as a
+   * custom property, so this animates without any JavaScript on the main thread
+   * and without the `height: auto` problem.
+   */
+  --animate-accordion-down: accordion-down var(--duration-fast) var(--ease-entrance);
+  --animate-accordion-up: accordion-up var(--duration-fast) var(--ease-exit);
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+    to {
+      height: 0;
+      opacity: 0;
+    }
+  }
 }
 
 /* ==========================================================================

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "images": "tsx scripts/optimize-images.ts",
     "build": "next build",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx,css,json,md}\"",

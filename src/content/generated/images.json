@@ -1,0 +1,344 @@
+{
+  "placeholder-01": {
+    "src": "/images/cakes/placeholder-01.jpg",
+    "width": 1600,
+    "height": 2000,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQBACdASoUABkAPwFurE+rJqQiMAwBYCAJZwDBkCwRQbk6IhNX2TiFTSAAAP7qsL+EgtZH3mO2iNIpJP1WzfDwDiSlhZcKY7qSQksHLc/hgAAA",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-01-400.avif",
+      "800": "/images/cakes/optimized/placeholder-01-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-01-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-01-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-01-400.webp",
+      "800": "/images/cakes/optimized/placeholder-01-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-01-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-01-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-01-1200.jpg"
+  },
+  "placeholder-02": {
+    "src": "/images/cakes/placeholder-02.jpg",
+    "width": 1600,
+    "height": 1600,
+    "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQBACdASoUABQAPwl2tVMrpyUiqAqpcCEJZwDE2BEOy1OgXNus+KiEwAD+0xCiAzDY48AOEwb22Iy8Ci0aaquSqZvpU/yKaKJgAAAA",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-02-400.avif",
+      "800": "/images/cakes/optimized/placeholder-02-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-02-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-02-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-02-400.webp",
+      "800": "/images/cakes/optimized/placeholder-02-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-02-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-02-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-02-1200.jpg"
+  },
+  "placeholder-03": {
+    "src": "/images/cakes/placeholder-03.jpg",
+    "width": 1600,
+    "height": 1200,
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAwCdASoUAA8APwlurk+rpiQiMAgBcCEJZwC06B48oEOyB5dBjgAA/t9h0k0mjhDcfqS4d+7Bt7jNcsWvT4M65K1AAA==",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-03-400.avif",
+      "800": "/images/cakes/optimized/placeholder-03-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-03-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-03-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-03-400.webp",
+      "800": "/images/cakes/optimized/placeholder-03-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-03-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-03-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-03-1200.jpg"
+  },
+  "placeholder-04": {
+    "src": "/images/cakes/placeholder-04.jpg",
+    "width": 1600,
+    "height": 2133,
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQBACdASoUABsAPvleq0+qpKQiN/qoAVAfCWcAwoAh31sw4ogsC4JILdmROz/6wAD+3n94CZMzEGuE6TsJM/1ixI0Px3AHltlu+7QVKJcAAA==",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-04-400.avif",
+      "800": "/images/cakes/optimized/placeholder-04-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-04-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-04-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-04-400.webp",
+      "800": "/images/cakes/optimized/placeholder-04-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-04-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-04-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-04-1200.jpg"
+  },
+  "placeholder-05": {
+    "src": "/images/cakes/placeholder-05.jpg",
+    "width": 1600,
+    "height": 2000,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQBACdASoUABkAPwl4s1Grp6SisBgIAXAhCWcAzcAQ5c9MFORmEl/yPicpAAAA/t6AKlNzmUgEs+qZhPgGJC1u+nbhma2tGB/ZJWd+vXwYAAAA",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-05-400.avif",
+      "800": "/images/cakes/optimized/placeholder-05-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-05-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-05-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-05-400.webp",
+      "800": "/images/cakes/optimized/placeholder-05-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-05-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-05-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-05-1200.jpg"
+  },
+  "placeholder-06": {
+    "src": "/images/cakes/placeholder-06.jpg",
+    "width": 1600,
+    "height": 1600,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwBACdASoUABQAPwl8s1Qrp6QjKAqpcCEJZwDCgBEP8rq4nFBquljKIgAA/t5/7YtHNqLPB9uLsNIonsExH0TD4OPD2NsPgAA=",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-06-400.avif",
+      "800": "/images/cakes/optimized/placeholder-06-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-06-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-06-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-06-400.webp",
+      "800": "/images/cakes/optimized/placeholder-06-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-06-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-06-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-06-1200.jpg"
+  },
+  "placeholder-07": {
+    "src": "/images/cakes/placeholder-07.jpg",
+    "width": 1600,
+    "height": 1200,
+    "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAwCdASoUAA8APwlysVArpqSisAgBcCEJZwCuHB3Xr4OPUynex4AA/tQ3E2a/eLNuUgPZnMVQQK/oYHvZW8AA",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-07-400.avif",
+      "800": "/images/cakes/optimized/placeholder-07-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-07-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-07-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-07-400.webp",
+      "800": "/images/cakes/optimized/placeholder-07-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-07-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-07-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-07-1200.jpg"
+  },
+  "placeholder-08": {
+    "src": "/images/cakes/placeholder-08.jpg",
+    "width": 1600,
+    "height": 2133,
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoUABsAPwFurk+rJqQiMAwBYCAJZwDI1DI8QK5KzX5gnxFwAP7sVr46Qu7dqedhbxPw5pGjEheSl7ScFTVpuL38Fb4pmmCWFQAAAA==",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-08-400.avif",
+      "800": "/images/cakes/optimized/placeholder-08-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-08-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-08-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-08-400.webp",
+      "800": "/images/cakes/optimized/placeholder-08-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-08-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-08-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-08-1200.jpg"
+  },
+  "placeholder-09": {
+    "src": "/images/cakes/placeholder-09.jpg",
+    "width": 1600,
+    "height": 2000,
+    "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwBACdASoUABkAPwl6sFGrqCSisBgIAXAhCWcAyNQQ72OHbWIMFfVuoMG4AAD+0xASa/Dv7q7P3cayXTWspY51tgvP9pMq/aNQqSvegAA=",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-09-400.avif",
+      "800": "/images/cakes/optimized/placeholder-09-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-09-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-09-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-09-400.webp",
+      "800": "/images/cakes/optimized/placeholder-09-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-09-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-09-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-09-1200.jpg"
+  },
+  "placeholder-10": {
+    "src": "/images/cakes/placeholder-10.jpg",
+    "width": 1600,
+    "height": 1600,
+    "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQBACdASoUABQAPwl2tVMrpyUiqAqpcCEJZwDDrBESipfnBMJXGb2fCIAAAP7ef+as3cQGuYbtDHHnEYbze3c/ezkV158QINUAAA==",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-10-400.avif",
+      "800": "/images/cakes/optimized/placeholder-10-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-10-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-10-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-10-400.webp",
+      "800": "/images/cakes/optimized/placeholder-10-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-10-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-10-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-10-1200.jpg"
+  },
+  "placeholder-11": {
+    "src": "/images/cakes/placeholder-11.jpg",
+    "width": 1600,
+    "height": 1200,
+    "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASoUAA8APwlysVArpqSisAgBcCEJZQCnFB5KGuaiQqQQAP7fYdJq8GIfef3m8w10OjRH9st7Si5oYhCdAAA=",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-11-400.avif",
+      "800": "/images/cakes/optimized/placeholder-11-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-11-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-11-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-11-400.webp",
+      "800": "/images/cakes/optimized/placeholder-11-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-11-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-11-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-11-1200.jpg"
+  },
+  "placeholder-12": {
+    "src": "/images/cakes/placeholder-12.jpg",
+    "width": 1600,
+    "height": 2133,
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwBACdASoUABsAPwl2sFGrpySisBgIAXAhCWcAxkAQ5bNek5mZLVT9cww70AD+3oMcfry2OxmtrCsXD6YW8JTm6mJRqvagjyiixfrahcAAAA==",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-12-400.avif",
+      "800": "/images/cakes/optimized/placeholder-12-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-12-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-12-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-12-400.webp",
+      "800": "/images/cakes/optimized/placeholder-12-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-12-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-12-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-12-1200.jpg"
+  },
+  "placeholder-13": {
+    "src": "/images/cakes/placeholder-13.jpg",
+    "width": 1600,
+    "height": 2000,
+    "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAwCdASoUABkAPwFurk+rJqQiMAwBYCAJZwDKtDI8LTaP2NrbI8gAAP7rcl+EgtZH3mO2iacjw7H8E8x0MMmjJelp6izs859nKVAAAAA=",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-13-400.avif",
+      "800": "/images/cakes/optimized/placeholder-13-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-13-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-13-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-13-400.webp",
+      "800": "/images/cakes/optimized/placeholder-13-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-13-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-13-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-13-1200.jpg"
+  },
+  "placeholder-14": {
+    "src": "/images/cakes/placeholder-14.jpg",
+    "width": 1600,
+    "height": 1600,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQBACdASoUABQAPwl4sVIrpySiqA1RcCEJZwDGQBEPNi8AVt/Udu/QAAD+0xCiAzEmtJwrDgTzGTsFVHQoc4DL6DvFEje6AAA=",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-14-400.avif",
+      "800": "/images/cakes/optimized/placeholder-14-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-14-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-14-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-14-400.webp",
+      "800": "/images/cakes/optimized/placeholder-14-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-14-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-14-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-14-1200.jpg"
+  },
+  "placeholder-15": {
+    "src": "/images/cakes/placeholder-15.jpg",
+    "width": 1600,
+    "height": 1200,
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAwCdASoUAA8APwlurk+rpiQiMAgBcCEJZwC7AB49ClF5eh7ePIAA/tQ3EzU//TuTGKC7L0GMJpLzlxNAQBba6oAAAA==",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-15-400.avif",
+      "800": "/images/cakes/optimized/placeholder-15-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-15-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-15-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-15-400.webp",
+      "800": "/images/cakes/optimized/placeholder-15-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-15-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-15-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-15-1200.jpg"
+  },
+  "placeholder-16": {
+    "src": "/images/cakes/placeholder-16.jpg",
+    "width": 1600,
+    "height": 2133,
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwBACdASoUABsAPvlor0+qpiSiMAwBUB8JZwDC+CHfogL8TbQM6oWEZBVNB9RAAP7nF6mykv3ubCE6vexwdM9a3bmvbD28JJSiIKBDTrC1gAAA",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-16-400.avif",
+      "800": "/images/cakes/optimized/placeholder-16-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-16-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-16-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-16-400.webp",
+      "800": "/images/cakes/optimized/placeholder-16-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-16-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-16-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-16-1200.jpg"
+  },
+  "placeholder-17": {
+    "src": "/images/cakes/placeholder-17.jpg",
+    "width": 1600,
+    "height": 2000,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwBACdASoUABkAPwl4s1Crp6SisBgIAXAhCWcAvzgQ4eCSNsIBmDCkJ/nw4AD+3pDT4TAuAhPOJ3gfT2/Jakjh/Qw5yRnhBXyaTZsL+pv+7WpAAAA=",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-17-400.avif",
+      "800": "/images/cakes/optimized/placeholder-17-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-17-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-17-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-17-400.webp",
+      "800": "/images/cakes/optimized/placeholder-17-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-17-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-17-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-17-1200.jpg"
+  },
+  "placeholder-18": {
+    "src": "/images/cakes/placeholder-18.jpg",
+    "width": 1600,
+    "height": 1600,
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwBACdASoUABQAPwl6tVOrp6UiqAqpcCEJZwDKtBEP8qvHNqrLlRNXxgAA/t6AKpeW4qLw7Tl2Np7Fozi/BclE9/E5sgAA",
+    "avif": {
+      "400": "/images/cakes/optimized/placeholder-18-400.avif",
+      "800": "/images/cakes/optimized/placeholder-18-800.avif",
+      "1200": "/images/cakes/optimized/placeholder-18-1200.avif",
+      "1600": "/images/cakes/optimized/placeholder-18-1600.avif"
+    },
+    "webp": {
+      "400": "/images/cakes/optimized/placeholder-18-400.webp",
+      "800": "/images/cakes/optimized/placeholder-18-800.webp",
+      "1200": "/images/cakes/optimized/placeholder-18-1200.webp",
+      "1600": "/images/cakes/optimized/placeholder-18-1600.webp"
+    },
+    "fallback": "/images/cakes/optimized/placeholder-18-1200.jpg"
+  }
+}
