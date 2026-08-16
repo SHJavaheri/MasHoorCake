@@ -1,26 +1,283 @@
 @import "tailwindcss";
 
+/*
+ * Dark mode is class-driven (`<html class="dark">`), not media-driven, so the
+ * user can override their OS preference. next-themes sets the class, and a
+ * blocking script in the document head applies it before first paint.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ==========================================================================
+   1. RAW PALETTE
+   Never reference these directly in components. They exist only to be mapped
+   onto the semantic tokens below. Swapping in the bakery's real brand colours
+   means editing this block and nothing else.
+   ========================================================================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warm neutrals — bone through espresso */
+  --bone-50: #fdfbf7;
+  --bone-100: #faf6ef;
+  --bone-200: #f3ece0;
+  --oat-300: #e8ddcb;
+  --oat-400: #d8c8ae;
+  --clay-500: #b9a488;
+  --clay-600: #8d7a61;
+  --espresso-700: #5b4a3a;
+  --espresso-800: #3a2e25;
+  --espresso-900: #2a211a;
+  --espresso-950: #1a1512;
+
+  /* Saffron — the primary accent. Warm, appetising, unmistakably Persian. */
+  --saffron-300: #f0c778;
+  --saffron-400: #e5aa42;
+  --saffron-500: #d18e21;
+  --saffron-600: #ad7016;
+  --saffron-700: #8a5711;
+
+  /* Pistachio — secondary accent, used sparingly for freshness. */
+  --pistachio-300: #b9c795;
+  --pistachio-500: #7f9457;
+  --pistachio-700: #5c6d3c;
+
+  /* Pomegranate — rare tertiary accent. Yalda, winter, romance. */
+  --rose-400: #c4697a;
+  --rose-500: #a94456;
+  --rose-600: #93394a;
+  --rose-700: #7d2f3e;
 }
 
+/* ==========================================================================
+   2. SEMANTIC TOKENS — LIGHT ("Morning Kitchen")
+   Airy, clean, appetising. Components reference only these.
+   ========================================================================== */
+:root {
+  --bg: var(--bone-100);
+  --bg-subtle: var(--bone-200);
+  --surface: var(--bone-50);
+  --surface-raised: #ffffff;
+  --surface-sunken: var(--oat-300);
+
+  --text: var(--espresso-900);
+  --text-muted: var(--espresso-700);
+  --text-subtle: var(--clay-600);
+  --text-inverse: var(--bone-100);
+
+  --border: var(--oat-300);
+  --border-strong: var(--oat-400);
+
+  --accent: var(--saffron-600);
+  --accent-hover: var(--saffron-700);
+  --accent-subtle: var(--saffron-300);
+  --accent-contrast: var(--bone-50);
+
+  --secondary: var(--pistachio-700);
+  --tertiary: var(--rose-700);
+
+  --focus-ring: var(--saffron-600);
+
+  /* Warm shadows — never neutral grey, which reads cold against bone. */
+  --shadow-sm: 0 1px 2px rgba(58, 46, 37, 0.06);
+  --shadow-md: 0 4px 16px -4px rgba(58, 46, 37, 0.1);
+  --shadow-lg: 0 16px 48px -12px rgba(58, 46, 37, 0.16);
+
+  /* Photography grade — cakes are lit differently in each theme. */
+  --photo-filter: saturate(1.02) contrast(1.01);
+
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   3. SEMANTIC TOKENS — DARK ("Evening Patisserie")
+   Warm charcoal-brown, never pure black and never cool grey: cool greys make
+   food photography look inedible. Candlelit and intimate, not "inverted".
+   ========================================================================== */
+.dark {
+  --bg: var(--espresso-950);
+  --bg-subtle: #15110f;
+  --surface: var(--espresso-900);
+  --surface-raised: var(--espresso-800);
+  --surface-sunken: #120e0c;
+
+  --text: var(--bone-200);
+  --text-muted: #c4b5a2;
+  --text-subtle: var(--clay-500);
+  --text-inverse: var(--espresso-950);
+
+  --border: #3a2e25;
+  --border-strong: #4d3e32;
+
+  /* Accent lifts in dark so it glows rather than muddies. */
+  --accent: var(--saffron-400);
+  --accent-hover: var(--saffron-300);
+  --accent-subtle: var(--saffron-700);
+  --accent-contrast: var(--espresso-950);
+
+  --secondary: var(--pistachio-300);
+  --tertiary: var(--rose-400);
+
+  --focus-ring: var(--saffron-400);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px -12px rgba(0, 0, 0, 0.65);
+
+  --photo-filter: saturate(1.06) contrast(1.03) brightness(0.97);
+
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   4. TAILWIND THEME MAPPING
+   Exposes the semantic tokens as Tailwind utilities (bg-surface, text-muted,
+   border-border, font-display, text-display-lg, ease-entrance …).
+   ========================================================================== */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-sunken: var(--surface-sunken);
+
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-subtle: var(--text-subtle);
+  --color-text-inverse: var(--text-inverse);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-contrast: var(--accent-contrast);
+
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+
+  /* Typefaces are injected by next/font in the root layout. */
+  --font-display: var(--font-display), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-persian: var(--font-persian), var(--font-body), sans-serif;
+
+  /*
+   * Fluid type scale, ~1.25 ratio, clamped between 375px and 1280px viewports.
+   * Headings run deliberately large — editorial, not corporate.
+   */
+  --text-display-xl: clamp(3rem, 1.5rem + 6.4vw, 6.5rem);
+  --text-display-lg: clamp(2.5rem, 1.5rem + 4.3vw, 4.75rem);
+  --text-display-md: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --text-display-sm: clamp(1.625rem, 1.25rem + 1.6vw, 2.25rem);
+  --text-title: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-body-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+
+  /*
+   * One easing set and one duration scale for the entire site. Inconsistent
+   * easing is the single clearest tell of an amateur build, so every animation
+   * — CSS or Framer Motion — draws from these.
+   */
+  --ease-entrance: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --duration-instant: 120ms;
+  --duration-fast: 240ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ==========================================================================
+   5. BASE STYLES
+   ========================================================================== */
+@layer base {
+  * {
+    /* Border colour defaults to Tailwind's grey otherwise, which is cold. */
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset for the sticky header when jumping to an anchor. */
+    scroll-padding-block-start: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-lg);
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Persian sets larger than Latin at the same nominal size, and needs more
+     leading. Applied automatically whenever dir="rtl" is in effect. */
+  :where([lang="fa"]) body,
+  :where([dir="rtl"]) body {
+    font-family: var(--font-persian);
+    line-height: 1.85;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  /* The display serif has no Persian coverage; Vazirmatn carries headings too. */
+  :where([lang="fa"]) :is(h1, h2, h3) {
+    font-family: var(--font-persian);
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* A single, consistent focus treatment. Visible in both themes at AA. */
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--accent-subtle);
+    color: var(--espresso-900);
+  }
+
+  /* Cake photography carries the site; grade it per theme. */
+  img {
+    filter: var(--photo-filter);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ==========================================================================
+   6. REDUCED MOTION
+   Handled globally rather than per-component. Everything collapses to a plain
+   opacity change; nothing translates, scales, or loops.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

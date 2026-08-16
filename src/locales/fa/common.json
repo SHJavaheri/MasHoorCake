@@ -1,0 +1,64 @@
+{
+  "_TRANSLATION_STATUS": "PLACEHOLDER — machine-drafted Persian awaiting review by the baker. Do not ship to production unreviewed. Every string below needs a native-speaker pass for tone; marketing Persian does not survive literal translation.",
+  "nav": {
+    "home": "خانه",
+    "gallery": "گالری",
+    "cakes": "چه می‌سازیم",
+    "about": "درباره ما",
+    "contact": "تماس",
+    "order": "ثبت سفارش",
+    "openMenu": "باز کردن منو",
+    "closeMenu": "بستن منو",
+    "skipToContent": "رفتن به محتوا"
+  },
+  "theme": {
+    "label": "پوسته",
+    "light": "روشن",
+    "dark": "تیره",
+    "system": "سیستم",
+    "toggle": "تغییر پوسته"
+  },
+  "locale": {
+    "label": "زبان",
+    "switchTo": "تغییر به {language}"
+  },
+  "home": {
+    "heroTitle": "کیکی در خور جشن شما",
+    "heroSubtitle": "کیک‌های سفارشی جشن، دست‌ساز و در تعداد محدود.",
+    "heroCtaPrimary": "ثبت سفارش",
+    "heroCtaSecondary": "دیدن گالری",
+    "scrollCue": "برای دیدن بیشتر پایین بروید"
+  },
+  "gallery": {
+    "title": "گالری",
+    "intro": "مجموعه‌ای از کیک‌هایی که برای جشن‌های واقعی ساخته شده‌اند.",
+    "filterBy": "فیلتر بر اساس",
+    "clearFilters": "حذف همه",
+    "resultCount": "{count} کیک",
+    "empty": "هنوز کیکی با این فیلترها پیدا نشد.",
+    "loadMore": "نمایش بیشتر",
+    "orderSimilar": "سفارش چیزی شبیه این",
+    "close": "بستن"
+  },
+  "order": {
+    "title": "ثبت سفارش",
+    "intro": "از جشن‌تان بگویید، بقیه‌اش با ما.",
+    "cta": "باز کردن فرم سفارش",
+    "orContact": "یا مستقیم در تماس باشید"
+  },
+  "footer": {
+    "rights": "تمامی حقوق محفوظ است.",
+    "craftedNote": "با دقت پخته و ساخته شده."
+  },
+  "notFound": {
+    "title": "یک نفر زودتر رسیده",
+    "body": "این صفحه قبلاً خورده شده. اما گالری کاملاً پر است.",
+    "cta": "بازگشت به گالری"
+  },
+  "common": {
+    "from": "از",
+    "priceOnRequest": "قیمت بر اساس استعلام",
+    "servings": "نفر",
+    "loading": "در حال بارگذاری"
+  }
+}

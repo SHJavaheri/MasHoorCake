@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Allows a manual redeploy from the Actions tab without pushing a commit.
+  workflow_dispatch:
+
+# Least privilege: only what deploy-pages actually needs.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. In-progress runs finish so a deploy is not left
+# half-applied, but queued ones collapse to the latest commit.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      # Linux is case-sensitive; Windows is not. Building on Linux catches
+      # import-casing bugs that would silently pass locally and 404 in production.
+      - name: Build static export
+        run: npm run build
+        env:
+          # GitHub Pages serves this repo at https://<owner>.github.io/<repo>,
+          # so assets and routes need a /<repo> prefix.
+          #
+          # WHEN MOVING TO A CUSTOM DOMAIN (or to Cloudflare Pages / Vercel):
+          # delete these two lines. Nothing else in the codebase is host-aware.
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

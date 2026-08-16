@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "cakes": "What We Make",
+    "about": "About",
+    "contact": "Contact",
+    "order": "Start an Order",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content"
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Switch theme"
+  },
+  "locale": {
+    "label": "Language",
+    "switchTo": "Switch to {language}"
+  },
+  "home": {
+    "heroTitle": "Cakes worth the occasion",
+    "heroSubtitle": "Bespoke celebration cakes, baked and finished by hand in small batches.",
+    "heroCtaPrimary": "Start an Order",
+    "heroCtaSecondary": "See the Gallery",
+    "scrollCue": "Scroll to explore"
+  },
+  "gallery": {
+    "title": "The Gallery",
+    "intro": "A selection of cakes made for real celebrations.",
+    "filterBy": "Filter by",
+    "clearFilters": "Clear all",
+    "resultCount": "{count} cakes",
+    "empty": "No cakes match those filters yet.",
+    "loadMore": "Show more",
+    "orderSimilar": "Order something like this",
+    "close": "Close"
+  },
+  "order": {
+    "title": "Start an Order",
+    "intro": "Tell us about your celebration and we'll take it from there.",
+    "cta": "Open the order form",
+    "orContact": "Or reach out directly"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "craftedNote": "Baked and built with care."
+  },
+  "notFound": {
+    "title": "Someone got here first",
+    "body": "This page has already been eaten. The gallery, however, is fully stocked.",
+    "cta": "Back to the gallery"
+  },
+  "common": {
+    "from": "from",
+    "priceOnRequest": "Price on request",
+    "servings": "servings",
+    "loading": "Loading"
+  }
+}

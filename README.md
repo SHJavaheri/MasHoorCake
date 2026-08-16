@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mashoor Cake
 
-## Getting Started
+Marketing and inquiry website for a small home bakery specialising in custom cakes.
 
-First, run the development server:
+Built as a **fully static site** — no server, no database, no accounts. Orders are
+submitted through a Google Form and finalised directly with the baker.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The root URL redirects to a locale. Pages live at `/en/…` and `/fa/…`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command             | Purpose                                   |
+| ------------------- | ----------------------------------------- |
+| `npm run dev`       | Local development server                  |
+| `npm run build`     | Static export to `out/`                   |
+| `npm run preview`   | Build, then serve `out/` locally          |
+| `npm run lint`      | ESLint, including `jsx-a11y` strict rules |
+| `npm run typecheck` | TypeScript, no emit                       |
+| `npm run format`    | Prettier, with Tailwind class sorting     |
 
-## Learn More
+> **Verify with `npm run preview`, not `npm run dev`.** The dev server runs a real
+> Next.js server and will happily render things that a static export cannot produce.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the export and
+publishes it to GitHub Pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+One-time repository setup: **Settings → Pages → Build and deployment → Source →
+GitHub Actions**.
 
-## Deploy on Vercel
+### Moving to a custom domain or another host
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The codebase is deliberately host-agnostic. To migrate:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Delete the `NEXT_PUBLIC_BASE_PATH` and `NEXT_PUBLIC_SITE_URL` lines from the deploy
+   workflow (or point them at the new origin).
+2. For a custom domain on GitHub Pages, add a `public/CNAME` file containing the domain.
+3. For Cloudflare Pages / Vercel, additionally remove `output: "export"` from
+   `next.config.ts` and swap the image wrapper to `next/image` to regain runtime image
+   optimisation.
+
+Nothing else in the codebase is aware of where it is hosted.
+
+## Project status
+
+Phase 0 complete: design-token system, bilingual routing with RTL, theming with no
+flash of the wrong theme, static export, and the Pages deploy pipeline.
+
+Branding, photography, copy, pricing, and Persian translations are placeholders marked
+`TODO(content)`.
