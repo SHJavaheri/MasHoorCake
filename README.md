@@ -49,10 +49,22 @@ The codebase is deliberately host-agnostic. To migrate:
 
 Nothing else in the codebase is aware of where it is hosted.
 
+Live at **https://hamidjavaheri.com/MasHoorCake/** — the repository owner's user site
+carries a custom domain, so project pages are served from it rather than from
+`github.io`.
+
+## Changing content
+
+See **[CONTENT-GUIDE.md](CONTENT-GUIDE.md)**. Business details, copy, the menu, and
+the cake portfolio are all text edits; adding photographs additionally needs
+`npm run images`.
+
 ## Project status
 
-Phase 0 complete: design-token system, bilingual routing with RTL, theming with no
-flash of the wrong theme, static export, and the Pages deploy pipeline.
+Built and deployed: design system in two themes, bilingual EN/FA with RTL, the
+gallery with filters and detail modal, all six pages, the motion vocabulary, and the
+Easter eggs.
 
-Branding, photography, copy, pricing, and Persian translations are placeholders marked
-`TODO(content)`.
+**Everything customer-facing is still placeholder.** Branding, photography, copy,
+pricing, contact details, the Google Form link, and the Persian translations are all
+marked `TODO(content)` — search the project for that string to find them.
