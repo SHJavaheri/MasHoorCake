@@ -38,12 +38,12 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       transition={transition.fast}
       className={cn(
         "fixed inset-x-0 top-0 z-40",
-        // In light mode the dark wordmark and links need a stable surface over
-        // hero photography. Dark mode's image treatment already provides that
-        // contrast, so it keeps the deliberately transparent opening state.
+        // Navigation must remain legible over every hero image. Keep an opaque
+        // semantic surface at the top in both themes; after scrolling it can
+        // soften slightly because the content below already has a page surface.
         isScrolled
           ? "border-border bg-bg/80 border-b backdrop-blur-xl"
-          : "bg-bg/95 shadow-[var(--shadow-sm)] dark:bg-transparent dark:shadow-none",
+          : "border-border bg-bg border-b shadow-[var(--shadow-sm)]",
       )}
     >
       <div className="mx-auto flex h-20 w-full max-w-[88rem] items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
