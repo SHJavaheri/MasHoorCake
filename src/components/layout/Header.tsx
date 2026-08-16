@@ -38,9 +38,12 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       transition={transition.fast}
       className={cn(
         "fixed inset-x-0 top-0 z-40",
-        // The blur only appears once there is content behind it; over the hero
-        // a frosted bar would just muddy the photograph.
-        isScrolled && "border-border bg-bg/80 border-b backdrop-blur-xl",
+        // In light mode the dark wordmark and links need a stable surface over
+        // hero photography. Dark mode's image treatment already provides that
+        // contrast, so it keeps the deliberately transparent opening state.
+        isScrolled
+          ? "border-border bg-bg/80 border-b backdrop-blur-xl"
+          : "bg-bg/95 shadow-[var(--shadow-sm)] dark:bg-transparent dark:shadow-none",
       )}
     >
       <div className="mx-auto flex h-20 w-full max-w-[88rem] items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
