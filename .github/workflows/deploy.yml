@@ -46,7 +46,10 @@ jobs:
           # WHEN MOVING TO A CUSTOM DOMAIN (or to Cloudflare Pages / Vercel):
           # delete these two lines. Nothing else in the codebase is host-aware.
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
-          NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          # The owner's user site (SHJavaheri.github.io) has a custom domain, so
+          # project pages are served from it rather than from github.io.
+          # Used for canonical URLs, Open Graph tags, and the sitemap.
+          NEXT_PUBLIC_SITE_URL: https://hamidjavaheri.com/${{ github.event.repository.name }}
 
       - uses: actions/configure-pages@v5
 
