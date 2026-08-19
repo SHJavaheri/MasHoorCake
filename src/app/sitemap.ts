@@ -19,14 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const locale of locales) {
     for (const route of allRoutes) {
-      // The confirmation page is not a destination anyone should arrive at cold.
-      if (route === "/thanks") continue;
-
       entries.push({
         url: absoluteUrl(localePath(locale, route)),
         lastModified: new Date(),
         changeFrequency: route === "/gallery" ? "weekly" : "monthly",
-        priority: route === "/" ? 1 : route === "/gallery" ? 0.9 : 0.7,
+        // The designer is the site's main destination alongside the gallery.
+        priority: route === "/" ? 1 : route === "/design" || route === "/gallery" ? 0.9 : 0.7,
         alternates: {
           languages: Object.fromEntries(
             locales.map((l) => [localeHreflang[l], absoluteUrl(localePath(l, route))]),

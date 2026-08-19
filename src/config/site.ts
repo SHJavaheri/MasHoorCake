@@ -15,7 +15,7 @@ export const site = {
     fa: "کیک سفارشی، دست‌ساز",
   },
   description: {
-    en: "A small home bakery making bespoke celebration cakes to order, with Persian-inspired flavours and finishes.",
+    en: "A small home bakery making bespoke celebration cakes to order, with Persian inspired flavours and finishes.",
     fa: "یک شیرینی‌پزی خانگی کوچک که کیک‌های سفارشی جشن را با طعم‌ها و تزئینات ایرانی می‌سازد.",
   },
 

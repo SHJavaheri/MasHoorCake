@@ -9,7 +9,7 @@ import { Container, Section } from "@/components/ui/Container";
 import { Reveal } from "@/components/motion/Reveal";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
-import { saveIntent } from "@/lib/order/intent";
+import { seedDesignFromSize } from "@/lib/cake-maker/seed";
 import { spring } from "@/lib/motion/tokens";
 import { useRouter } from "next/navigation";
 
@@ -45,8 +45,8 @@ export function SizeExplorer({ locale, dict }: { locale: Locale; dict: Dictionar
   const widest = TIER_SIZES[0].diameter;
 
   function handleEnquire() {
-    saveIntent({ tiers, servings });
-    router.push(localePath(locale, "/order"));
+    seedDesignFromSize(tiers, servings);
+    router.push(localePath(locale, "/design"));
   }
 
   return (

@@ -26,7 +26,9 @@ export type LocalizedString = z.infer<typeof localizedStringSchema>;
  * not free text. That is what makes filtering, cross-linking, and future cake
  * detail pages trivial rather than a string-matching exercise.
  */
-const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "must be lowercase kebab-case");
+export const slug = z
+  .string()
+  .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "must be lowercase kebab-case");
 
 export const cakeImageSchema = z.object({
   /** Path relative to /public, e.g. "/images/cakes/saffron-01.jpg". */

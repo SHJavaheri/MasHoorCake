@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion } from "motion/react";
@@ -20,7 +20,7 @@ import { easeEntrance, transition } from "@/lib/motion/tokens";
  * A full-screen overlay rather than a dropdown: on a site whose selling point
  * is composure, a cramped menu panel undercuts everything around it. Radix
  * Dialog supplies the focus trap, scroll lock, `inert` background, and Escape
- * handling — all things that are easy to hand-roll almost correctly.
+ * handling â€” all things that are easy to hand-roll almost correctly.
  */
 export function MobileNav({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const [open, setOpen] = useState(false);
@@ -125,8 +125,8 @@ export function MobileNav({ locale, dict }: { locale: Locale; dict: Dictionary }
                     transition={{ delay: 0.32, duration: 0.36, ease: easeEntrance }}
                     className="mt-10 flex flex-col gap-6"
                   >
-                    <Button href={localePath(locale, "/order")} size="lg" className="w-full">
-                      {dict.nav.order}
+                    <Button href={localePath(locale, "/design")} size="lg" className="w-full">
+                      {dict.nav.design}
                     </Button>
                     <LocaleSwitcher
                       locale={locale}

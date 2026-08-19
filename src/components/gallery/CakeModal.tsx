@@ -21,7 +21,7 @@ import {
 import { imageKey } from "@/lib/gallery/cakes";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
-import { saveIntent } from "@/lib/order/intent";
+import { seedDesignFromCake } from "@/lib/cake-maker/seed";
 import { spring, transition } from "@/lib/motion/tokens";
 
 /**
@@ -77,17 +77,11 @@ export function CakeModal({
 
   function handleOrderSimilar() {
     if (!cake) return;
-    // Seeds the order page and the Google Form prefill with this cake.
-    saveIntent({
-      cakeSlug: cake.slug,
-      cakeName: cake.name[locale],
-      flavour: cake.flavours.map((s) => findTerm(flavourTerms, s)?.label[locale]).join(", "),
-      filling: cake.fillings.map((s) => findTerm(fillingTerms, s)?.label[locale]).join(", "),
-      occasion: findTerm(occasionTerms, cake.occasions[0])?.label[locale],
-      tiers: cake.tiers,
-      servings: cake.servings.max,
-    });
-    router.push(localePath(locale, "/order"));
+    // Opens the Cake Maker with this cake's size, flavour, filling and style
+    // already chosen. The seed carries taxonomy slugs, not display labels, so
+    // it maps to the right options in either language.
+    seedDesignFromCake(cake, cake.name[locale]);
+    router.push(localePath(locale, "/design"));
   }
 
   const image = cake?.images[imageIndex] ?? cake?.images[0];
@@ -168,7 +162,7 @@ export function CakeModal({
 
                     <dl className="border-border grid grid-cols-2 gap-4 border-y py-5 text-sm">
                       <Detail label={dict.gallery.detailServings}>
-                        {cake.servings.min}–{cake.servings.max}
+                        {cake.servings.min} to {cake.servings.max}
                       </Detail>
                       <Detail label={dict.gallery.detailTiers}>{cake.tiers}</Detail>
                       {cake.dimensions && (

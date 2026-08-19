@@ -79,7 +79,7 @@ export function SignatureTrio({
                       {cake.name[locale]}
                     </h3>
                     <p className="text-text-muted mt-1 text-sm">
-                      {cake.servings.min}–{cake.servings.max} {dict.common.servings}
+                      {cake.servings.min} to {cake.servings.max} {dict.common.servings}
                       {cake.priceFrom && ` · ${dict.common.from} $${cake.priceFrom}`}
                     </p>
                   </div>

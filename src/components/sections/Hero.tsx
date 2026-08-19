@@ -111,7 +111,7 @@ export function Hero({
           transition={{ delay: 0.6, duration: 0.6, ease: easeEntrance }}
           className="mt-10 flex flex-wrap gap-4"
         >
-          <Button href={localePath(locale, "/order")} size="lg">
+          <Button href={localePath(locale, "/design")} size="lg">
             {dict.home.heroCtaPrimary}
           </Button>
           <Button

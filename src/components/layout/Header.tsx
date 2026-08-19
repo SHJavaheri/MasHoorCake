@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import Link from "next/link";
@@ -24,7 +24,7 @@ import { cn } from "@/lib/utils/cn";
  * header is mostly in the way, but it must be one gesture from reach at any
  * scroll position, since "Start an Order" lives here.
  *
- * It stays put while a mobile menu is open — retracting the header out from
+ * It stays put while a mobile menu is open â€” retracting the header out from
  * under an open menu is disorienting.
  */
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -93,11 +93,11 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           />
           <ThemeToggle label={dict.theme.toggle} />
           <Button
-            href={localePath(locale, "/order")}
+            href={localePath(locale, "/design")}
             size="sm"
             className="hidden lg:inline-flex"
           >
-            {dict.nav.order}
+            {dict.nav.design}
           </Button>
           <MobileNav locale={locale} dict={dict} />
         </div>

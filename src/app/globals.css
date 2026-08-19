@@ -14,71 +14,110 @@
    means editing this block and nothing else.
    ========================================================================== */
 :root {
-  /* Warm neutrals — bone through espresso */
-  --bone-50: #fdfbf7;
-  --bone-100: #faf6ef;
-  --bone-200: #f3ece0;
-  --oat-300: #e8ddcb;
-  --oat-400: #d8c8ae;
-  --clay-500: #b9a488;
-  --clay-600: #8d7a61;
-  --espresso-700: #5b4a3a;
-  --espresso-800: #3a2e25;
-  --espresso-900: #2a211a;
-  --espresso-950: #1a1512;
+  /*
+   * Ink — near-black through soft white, the neutral spine. Very slightly
+   * green-cool so it sits under the mint without turning muddy.
+   * 900 and 50 are the brand's own text and background values.
+   */
+  --ink-950: #0b0f0e;
+  --ink-900: #121716; /* BRAND — primary text */
+  --ink-800: #1c2422;
+  --ink-700: #2a3532;
+  --ink-600: #46534f;
+  --ink-500: #5e6e69;
+  --ink-400: #8a9995;
+  --ink-300: #bcc7c3;
+  --ink-200: #dae2df;
+  --ink-100: #edf2f0;
+  --ink-50: #fafcfb; /* BRAND — soft white background */
 
-  /* Saffron — the primary accent. Warm, appetising, unmistakably Persian. */
-  --saffron-300: #f0c778;
-  --saffron-400: #e5aa42;
-  --saffron-500: #d18e21;
-  --saffron-600: #ad7016;
-  --saffron-700: #8a5711;
+  /*
+   * Mint — the scalloped logo badge. 300 is the brand value, and it is a
+   * SURFACE colour: at 1.06:1 against the page it cannot carry text, an icon,
+   * or a hairline border. 700/800 are the derived accessible steps that do.
+   */
+  --mint-50: #f2faf8;
+  --mint-100: #e3f4f0;
+  --mint-200: #c7e7e0;
+  --mint-300: #9bd3c7; /* BRAND */
+  --mint-400: #6fbcad;
+  --mint-500: #4a9e8e;
+  --mint-600: #3c8a7c;
+  --mint-700: #2e7266;
+  --mint-800: #24584e;
+  --mint-900: #16332e;
 
-  /* Pistachio — secondary accent, used sparingly for freshness. */
-  --pistachio-300: #b9c795;
-  --pistachio-500: #7f9457;
-  --pistachio-700: #5c6d3c;
+  /*
+   * Sage — the optional muted teal. Quiet dividers, captions, illustration
+   * shading. Deliberately a short ramp: it is not a second accent.
+   */
+  --sage-300: #b3c4c0;
+  --sage-400: #859f99; /* BRAND */
+  --sage-600: #55736c;
+  --sage-800: #334743;
 
-  /* Pomegranate — rare tertiary accent. Yalda, winter, romance. */
-  --rose-400: #c4697a;
-  --rose-500: #a94456;
-  --rose-600: #93394a;
-  --rose-700: #7d2f3e;
+  /* Blush — the logo hearts. Same rule as mint: 200 is a surface colour. */
+  --blush-50: #fdf6f7;
+  --blush-100: #fae9ec;
+  --blush-200: #f3d3d8; /* BRAND */
+  --blush-300: #e9b4bd;
+  --blush-400: #d98d9b;
+  --blush-500: #c26a7b;
+  --blush-600: #a54f60;
+  --blush-700: #8e4252;
+  --blush-800: #632c38;
+
+  /*
+   * Honey — the one complementary warm, so an all-mint page does not read
+   * cold. Estimate badges and candlelight. At most twice per page.
+   */
+  --honey-300: #f0cf90;
+  --honey-500: #c9922e;
+  --honey-700: #8a6212;
 }
 
 /* ==========================================================================
-   2. SEMANTIC TOKENS — LIGHT ("Morning Kitchen")
+   2. SEMANTIC TOKENS — LIGHT ("Soft White Kitchen")
    Airy, clean, appetising. Components reference only these.
+
+   THE PALETTE RULE. Soft white is the dominant field: --bg is the brand
+   soft white and --surface is pure white. Mint and blush appear only as
+   section tints, chip fills, badges, and the accent — never as a wash over
+   the page. And the brand pastels (--mint-300, --blush-200) may only ever be
+   a fill BEHIND --text; anything carrying text, an icon, or a 1px border
+   against the page uses the 600/700 steps, which are AA.
    ========================================================================== */
 :root {
-  --bg: var(--bone-100);
-  --bg-subtle: var(--bone-200);
-  --surface: var(--bone-50);
+  --bg: var(--ink-50);
+  --bg-subtle: var(--mint-50);
+  --surface: #ffffff;
   --surface-raised: #ffffff;
-  --surface-sunken: var(--oat-300);
+  --surface-sunken: var(--ink-100);
 
-  --text: var(--espresso-900);
-  --text-muted: var(--espresso-700);
-  --text-subtle: var(--clay-600);
-  --text-inverse: var(--bone-100);
+  --text: var(--ink-900); /* 17.6:1 */
+  --text-muted: var(--ink-600); /*  7.8:1 */
+  --text-subtle: var(--ink-500); /*  5.2:1 */
+  --text-inverse: var(--ink-50);
 
-  --border: var(--oat-300);
-  --border-strong: var(--oat-400);
+  --border: var(--ink-200);
+  --border-strong: var(--sage-300);
 
-  --accent: var(--saffron-600);
-  --accent-hover: var(--saffron-700);
-  --accent-subtle: var(--saffron-300);
-  --accent-contrast: var(--bone-50);
+  /* 5.5:1 as text on --bg; 5.65:1 for white on it, so buttons pass AA. */
+  --accent: var(--mint-700);
+  --accent-hover: var(--mint-800); /* contrast rises on hover, to 8.1:1 */
+  --accent-subtle: var(--mint-200);
+  --accent-contrast: #ffffff;
 
-  --secondary: var(--pistachio-700);
-  --tertiary: var(--rose-700);
+  --secondary: var(--blush-600); /*  5.2:1 */
+  --secondary-subtle: var(--blush-200);
+  --tertiary: var(--honey-700);
 
-  --focus-ring: var(--saffron-600);
+  --focus-ring: var(--mint-800);
 
-  /* Warm shadows — never neutral grey, which reads cold against bone. */
-  --shadow-sm: 0 1px 2px rgba(58, 46, 37, 0.06);
-  --shadow-md: 0 4px 16px -4px rgba(58, 46, 37, 0.1);
-  --shadow-lg: 0 16px 48px -12px rgba(58, 46, 37, 0.16);
+  /* Shadows tinted with the ink, never neutral grey. */
+  --shadow-sm: 0 1px 2px rgba(18, 23, 22, 0.05);
+  --shadow-md: 0 4px 16px -4px rgba(18, 23, 22, 0.09);
+  --shadow-lg: 0 16px 48px -12px rgba(18, 23, 22, 0.14);
 
   /* Photography grade — cakes are lit differently in each theme. */
   --photo-filter: saturate(1.02) contrast(1.01);
@@ -87,41 +126,43 @@
 }
 
 /* ==========================================================================
-   3. SEMANTIC TOKENS — DARK ("Evening Patisserie")
-   Warm charcoal-brown, never pure black and never cool grey: cool greys make
-   food photography look inedible. Candlelit and intimate, not "inverted".
+   3. SEMANTIC TOKENS — DARK ("Evening Mint")
+   Deep teal-charcoal, never pure black and never cool grey: cool greys make
+   food photography look inedible. This is where #9BD3C7 finally gets to be
+   the accent at full brand strength — 11:1 against the background.
    ========================================================================== */
 .dark {
-  --bg: var(--espresso-950);
-  --bg-subtle: #15110f;
-  --surface: var(--espresso-900);
-  --surface-raised: var(--espresso-800);
-  --surface-sunken: #120e0c;
+  --bg: #0f1513;
+  --bg-subtle: #131b19;
+  --surface: #16201e;
+  --surface-raised: #1e2a27;
+  --surface-sunken: #0a0f0e;
 
-  --text: var(--bone-200);
-  --text-muted: #c4b5a2;
-  --text-subtle: var(--clay-500);
-  --text-inverse: var(--espresso-950);
+  --text: var(--ink-100);
+  --text-muted: var(--ink-300);
+  --text-subtle: var(--ink-400);
+  --text-inverse: #0f1513;
 
-  --border: #3a2e25;
-  --border-strong: #4d3e32;
+  --border: #26332f;
+  --border-strong: #364643;
 
   /* Accent lifts in dark so it glows rather than muddies. */
-  --accent: var(--saffron-400);
-  --accent-hover: var(--saffron-300);
-  --accent-subtle: var(--saffron-700);
-  --accent-contrast: var(--espresso-950);
+  --accent: var(--mint-300);
+  --accent-hover: var(--mint-200);
+  --accent-subtle: var(--mint-900);
+  --accent-contrast: #0f1513;
 
-  --secondary: var(--pistachio-300);
-  --tertiary: var(--rose-400);
+  --secondary: var(--blush-300);
+  --secondary-subtle: #3a2830;
+  --tertiary: var(--honey-300);
 
-  --focus-ring: var(--saffron-400);
+  --focus-ring: var(--mint-300);
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 16px -4px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 16px 48px -12px rgba(0, 0, 0, 0.65);
 
-  --photo-filter: saturate(1.06) contrast(1.03) brightness(0.97);
+  --photo-filter: saturate(1.05) contrast(1.03) brightness(0.97);
 
   color-scheme: dark;
 }
@@ -152,6 +193,7 @@
   --color-accent-contrast: var(--accent-contrast);
 
   --color-secondary: var(--secondary);
+  --color-secondary-subtle: var(--secondary-subtle);
   --color-tertiary: var(--tertiary);
 
   /*
@@ -160,8 +202,18 @@
    * regardless of the page theme, or the caption becomes unreadable in one of
    * them. These are the only "non-semantic" colours components may use.
    */
-  --color-scrim: var(--espresso-950);
-  --color-on-scrim: var(--bone-100);
+  --color-scrim: var(--ink-950);
+  --color-on-scrim: var(--ink-50);
+
+  /*
+   * Corner radii. Deliberately NEW names rather than overrides of Tailwind's
+   * own --radius-* scale: redefining --radius-2xl would silently resize every
+   * `rounded-2xl` already on the site. Use rounded-card / rounded-panel etc.
+   */
+  --radius-chip: 9999px;
+  --radius-card: 1.25rem;
+  --radius-panel: 1.75rem;
+  --radius-canvas: 2rem;
 
   /* Typefaces are injected by next/font in the root layout. */
   --font-display: var(--font-display), Georgia, "Times New Roman", serif;
@@ -290,9 +342,11 @@
     border-radius: 2px;
   }
 
+  /* --text rather than a fixed ink: --accent-subtle is a pale mint in light
+     and a deep mint in dark, so the foreground has to flip with it. */
   ::selection {
     background-color: var(--accent-subtle);
-    color: var(--espresso-900);
+    color: var(--text);
   }
 
   /* Cake photography carries the site; grade it per theme. */
@@ -318,5 +372,82 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   7. CAKE MAKER
+
+   The one place the site animates something other than transform and opacity.
+   Frosting has to *change colour* smoothly — that is the whole point of the
+   live preview — and a CSS fill transition repaints without reflowing, costs
+   no main-thread JavaScript, and is already flattened by the reduced-motion
+   block above. Scoped to the cake drawing and nowhere else.
+   ========================================================================== */
+.cake-fill-transition {
+  transition:
+    fill var(--duration-fast) var(--ease-inout),
+    fill-opacity var(--duration-fast) var(--ease-inout);
+}
+
+/* The cut-open view, shown while a filling is being chosen. Always present in
+   the tree at opacity 0, so the cake "opens" with a plain opacity fade rather
+   than popping in on mount. */
+.cake-cutaway {
+  transition: opacity var(--duration-base) var(--ease-inout);
+}
+
+/* ==========================================================================
+   8. PRINT
+   The Cake Request Summary is meant to be printed and handed over, so this is
+   a real layout rather than an afterthought. Print is always the light theme:
+   mint on charcoal wastes toner and reads as a mistake on paper.
+   ========================================================================== */
+@media print {
+  :root,
+  .dark {
+    --bg: #ffffff;
+    --bg-subtle: #ffffff;
+    --surface: #ffffff;
+    --surface-raised: #ffffff;
+    --surface-sunken: #f4f6f5;
+    --text: #121716;
+    --text-muted: #2a3532;
+    --text-subtle: #46534f;
+    --border: #bcc7c3;
+    --border-strong: #8a9995;
+    --accent: #24584e;
+    --accent-contrast: #ffffff;
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --photo-filter: none;
+    color-scheme: light;
+  }
+
+  /* Without this the icing colours and the mint rules drop out entirely. */
+  *,
+  *::before,
+  *::after {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Everything except the summary sheet is page chrome. */
+  body > *:not(#print-sheet) {
+    display: none !important;
+  }
+
+  #print-sheet {
+    display: block !important;
+  }
+
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 16mm;
   }
 }

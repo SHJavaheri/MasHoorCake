@@ -18,23 +18,80 @@ once.
 To hide a channel, set `enabled: false` rather than deleting it. The layout and
 ordering logic keys off that flag.
 
-## Ordering
+## The Cake Maker
 
-**`src/config/order.ts`** —
+There is no order form and no Google Form any more. A customer designs a cake at
+`/design`, and the site produces a **Cake Request Summary** they send you over
+WhatsApp, Telegram, or email — or download as a PDF. Nothing is ever ordered or
+paid for on the site.
 
-1. `formUrl`: paste the live Google Form link. Until this is a real URL, the
-   order page shows an honest disabled state rather than a button that leads
-   nowhere.
-2. `entries`: the pre-fill field IDs. To get them, open the form → ⋮ menu →
-   **Get pre-filled link** → fill in dummy values → **Get link**. The resulting
-   URL contains `entry.XXXXXXX=` pairs. Map each one to the matching field.
+### Prices
 
-   This is what lets "Order something like this" carry a customer's chosen cake,
-   flavour, and size into the form so they don't retype it.
-3. `checklist`: the "what to have ready" list.
+**`src/content/cake-maker/pricing.ts`** — **every number in it is a
+placeholder.** These are the global levers:
 
-Also worth doing: set the form's confirmation message to link to
-`/en/thanks/`, so the order finishes on your own page rather than Google's.
+| | |
+|---|---|
+| `base` | flat, covers the bake and the build regardless of size |
+| `perServing` | multiplied by the servings of the chosen size |
+| `perExtraTier` | added for each tier above the first |
+| `minimum` | never quote below this |
+| `roundUpTo` | the estimate is rounded **up** to a multiple of this |
+
+Anything that costs extra on its own — fondant, sugar roses, gold leaf — carries
+its own `priceDelta` on the option, in `src/content/cake-maker/options/*.ts`.
+Sculpted and other slow work uses `priceMultiplier`, which scales the whole cake.
+
+Between those two places, nothing else in the site contains a price. Every
+figure shown is labelled an estimate and paired with the line saying you confirm
+the real price yourself — that wording cannot be switched off.
+
+### The menu of options
+
+**`src/content/cake-maker/options/`** — one file per question: `shapes`, `sizes`,
+`flavours`, `fillings`, `frostings`, `frostingColours`, `toppings`,
+`decorations`, `themes`.
+
+Adding a flavour is one entry in `flavours.ts`:
+
+```ts
+{
+  id: "black-sesame",
+  label: { en: "Black Sesame" },
+  description: { en: "Toasted, nutty, faintly smoky." },
+  pricePerServing: 0.5,
+  allergens: ["sesame"],
+  taxonomySlug: "black-sesame",   // links it to the gallery filters
+  swatch: "#5a5148",
+  visual: { role: "sponge", fill: "#5a5148" },   // the baked crumb colour
+  requires: [],
+  featured: false,
+}
+```
+
+`sizes.ts` entries also carry `tiers`, `servings`, and `diameters` (largest
+first, in inches) — the drawing and the price both read those, so a new size
+needs no other change.
+
+If you get something wrong — a colour that isn't a hex code, a reference to an
+option that doesn't exist — the **build fails with a message naming the file and
+the option**, rather than the site quietly rendering a broken cake.
+
+### Decorations
+
+A decoration points at a piece of artwork with `visual.svgId`. The available ids
+are listed in `src/components/cake-maker/svg/parts/registry.ts`.
+
+To add one with a picture instead of drawn artwork, save a PNG (transparent
+background) into `public/images/cake-maker/sprites/` and reference it by
+filename — no code at all:
+
+```ts
+visual: { role: "decoration", slot: "topSurface", spriteId: "macaron-tower", count: 3 }
+```
+
+`slot` is where it sits: `topSurface`, `topEdge`, `band` (the sides), `base`,
+`sideScatter`, or `plaque`.
 
 ## Words on the page
 

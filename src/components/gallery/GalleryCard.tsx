@@ -69,7 +69,7 @@ export function GalleryCard({
         <p className="text-on-scrim/80 mt-1 text-sm">
           {occasion?.label[locale]}
           {" · "}
-          {cake.servings.min}–{cake.servings.max} {servingsLabel}
+          {cake.servings.min} to {cake.servings.max} {servingsLabel}
         </p>
       </div>
     </motion.button>

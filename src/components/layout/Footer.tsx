@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 import { CandlelightToggle } from "@/components/easter-eggs/CandlelightToggle";
 import { Wordmark } from "@/components/layout/Wordmark";
@@ -42,10 +42,10 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               ))}
               <li>
                 <Link
-                  href={localePath(locale, "/order")}
+                  href={localePath(locale, "/design")}
                   className="text-text-muted hover:text-accent text-sm transition-colors"
                 >
-                  {dict.nav.order}
+                  {dict.nav.design}
                 </Link>
               </li>
             </ul>
@@ -75,7 +75,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
         <div className="border-border text-text-subtle mt-16 flex flex-col items-start justify-between gap-4 border-t pt-8 text-sm sm:flex-row sm:items-center">
           <p>
-            © {new Date().getFullYear()} {site.name}. {dict.footer.rights}
+            Â© {new Date().getFullYear()} {site.name}. {dict.footer.rights}
           </p>
           <div className="flex items-center gap-3">
             <span>{dict.footer.craftedNote}</span>

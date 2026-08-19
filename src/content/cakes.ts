@@ -16,7 +16,7 @@ export const cakes: Cake[] = [
     slug: "saffron-pistachio-celebration",
     name: { en: "Saffron & Pistachio", fa: "زعفران و پسته" },
     description: {
-      en: "Saffron-steeped sponge layered with pistachio cream and a whisper of rosewater, finished in soft ivory buttercream.",
+      en: "Saffron steeped sponge layered with pistachio cream and a whisper of rosewater, finished in soft ivory buttercream.",
       fa: "کیک زعفرانی با لایه‌های کرم پسته و کمی گلاب، با روکش باترکریم عاجی.",
     },
     images: [
@@ -25,7 +25,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 2000,
         alt: {
-          en: "Two-tier ivory buttercream cake decorated with a gold geometric topper",
+          en: "Two tier ivory buttercream cake decorated with a gold geometric topper",
           fa: "کیک دو طبقه با باترکریم عاجی و تزئین هندسی طلایی",
         },
       },
@@ -62,7 +62,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 1600,
         alt: {
-          en: "Single-tier cake with textured deep red buttercream",
+          en: "Single tier cake with textured deep red buttercream",
           fa: "کیک یک طبقه با باترکریم قرمز تیره بافت‌دار",
         },
       },
@@ -88,7 +88,7 @@ export const cakes: Cake[] = [
     slug: "rose-cardamom-wedding",
     name: { en: "Rose & Cardamom", fa: "گل سرخ و هل" },
     description: {
-      en: "Three tiers of cardamom sponge with rose-scented Swiss buttercream and hand-piped sugar florals.",
+      en: "Three tiers of cardamom sponge with rose scented Swiss buttercream and hand piped sugar florals.",
       fa: "سه طبقه کیک هل با باترکریم گلاب و گل‌های قندی دست‌ساز.",
     },
     images: [
@@ -97,7 +97,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 1200,
         alt: {
-          en: "Three-tier pale cake covered in hand-piped sugar flowers",
+          en: "Three tier pale cake covered in hand piped sugar flowers",
           fa: "کیک سه طبقه روشن پوشیده از گل‌های قندی دست‌ساز",
         },
       },
@@ -123,7 +123,7 @@ export const cakes: Cake[] = [
     slug: "dark-chocolate-orange",
     name: { en: "Dark Chocolate & Orange Blossom", fa: "شکلات تلخ و بهارنارنج" },
     description: {
-      en: "Seventy-percent ganache against bright orange blossom, under a smooth chocolate finish.",
+      en: "Seventy percent ganache against bright orange blossom, under a smooth chocolate finish.",
       fa: "گاناش ۷۰ درصد در کنار بهارنارنج، با روکش صاف شکلاتی.",
     },
     images: [
@@ -157,7 +157,7 @@ export const cakes: Cake[] = [
     slug: "nowruz-sabzeh",
     name: { en: "Nowruz Sabzeh", fa: "سبزه نوروز" },
     description: {
-      en: "Pistachio sponge under fresh green buttercream, finished with a hand-painted Haft-Sin motif.",
+      en: "Pistachio sponge under fresh green buttercream, finished with a hand painted Haft Sin motif.",
       fa: "کیک پسته با باترکریم سبز و نقش هفت‌سین دست‌نقاشی.",
     },
     images: [
@@ -166,7 +166,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 2000,
         alt: {
-          en: "Green buttercream cake hand-painted with a Persian spring motif",
+          en: "Green buttercream cake hand painted with a Persian spring motif",
           fa: "کیک با باترکریم سبز و نقاشی دستی با نقش بهاری ایرانی",
         },
       },
@@ -191,7 +191,7 @@ export const cakes: Cake[] = [
     slug: "coffee-walnut-anniversary",
     name: { en: "Coffee & Walnut", fa: "قهوه و گردو" },
     description: {
-      en: "Espresso-soaked sponge with salted caramel and toasted walnut, finished in a dark textured sweep.",
+      en: "Espresso soaked sponge with salted caramel and toasted walnut, finished in a dark textured sweep.",
       fa: "کیک آغشته به اسپرسو با کارامل نمکی و گردوی برشته.",
     },
     images: [
@@ -200,7 +200,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 1600,
         alt: {
-          en: "Coffee-coloured cake with sweeping textured sides",
+          en: "Coffee coloured cake with sweeping textured sides",
           fa: "کیک قهوه‌ای با کناره‌های بافت‌دار",
         },
       },
@@ -234,7 +234,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 1200,
         alt: {
-          en: "Cake with a pink-to-ivory graduated buttercream finish",
+          en: "Cake with a pink to ivory graduated buttercream finish",
           fa: "کیک با روکش باترکریم از صورتی تا عاجی",
         },
       },
@@ -259,7 +259,7 @@ export const cakes: Cake[] = [
     slug: "gold-leaf-engagement",
     name: { en: "Gold Leaf", fa: "ورق طلا" },
     description: {
-      en: "Ivory buttercream with hand-applied edible gold leaf and a single sugar magnolia.",
+      en: "Ivory buttercream with hand applied edible gold leaf and a single sugar magnolia.",
       fa: "باترکریم عاجی با ورق طلای خوراکی و یک گل مگنولیای قندی.",
     },
     images: [
@@ -327,7 +327,7 @@ export const cakes: Cake[] = [
     slug: "persian-tile-wedding",
     name: { en: "Persian Tile", fa: "کاشی ایرانی" },
     description: {
-      en: "Hand-piped tilework in cobalt and turquoise across four tiers, echoing Isfahan mosque ceramics.",
+      en: "Hand piped tilework in cobalt and turquoise across four tiers, echoing Isfahan mosque ceramics.",
       fa: "کاشی‌کاری دست‌ساز آبی و فیروزه‌ای در چهار طبقه، با الهام از کاشی‌های اصفهان.",
     },
     images: [
@@ -336,7 +336,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 1600,
         alt: {
-          en: "Four-tier cake hand-piped with blue Persian tile patterns",
+          en: "Four tier cake hand piped with blue Persian tile patterns",
           fa: "کیک چهار طبقه با نقش کاشی ایرانی آبی",
         },
       },
@@ -406,7 +406,7 @@ export const cakes: Cake[] = [
         width: 1600,
         height: 2133,
         alt: {
-          en: "Sharp-edged ivory cake with a single sprig of dried wheat",
+          en: "Sharp edged ivory cake with a single sprig of dried wheat",
           fa: "کیک عاجی با لبه تیز و یک شاخه گندم خشک",
         },
       },

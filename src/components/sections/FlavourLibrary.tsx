@@ -10,7 +10,7 @@ import { Container, Section } from "@/components/ui/Container";
 import { fillings, flavours } from "@/content/taxonomy";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
-import { saveIntent } from "@/lib/order/intent";
+import { seedDesignFromFlavour } from "@/lib/cake-maker/seed";
 import { spring, transition } from "@/lib/motion/tokens";
 import { cn } from "@/lib/utils/cn";
 
@@ -45,11 +45,10 @@ export function FlavourLibrary({ locale, dict }: { locale: Locale; dict: Diction
   const fillingTerm = fillings.find((f) => f.slug === filling);
 
   function handleEnquire() {
-    saveIntent({
-      flavour: spongeTerm?.label[locale],
-      filling: fillingTerm?.label[locale],
-    });
-    router.push(localePath(locale, "/order"));
+    // Slugs, never `label[locale]`: a localised display string cannot be
+    // mapped back to a Cake Maker option in the other language.
+    if (spongeTerm) seedDesignFromFlavour(spongeTerm.slug, fillingTerm?.slug);
+    router.push(localePath(locale, "/design"));
   }
 
   return (

@@ -1,12 +1,12 @@
 {
-  "_TRANSLATION_STATUS": "PLACEHOLDER — machine-drafted Persian awaiting review by the baker. Do not ship to production unreviewed. Every string below needs a native-speaker pass for tone; marketing Persian does not survive literal translation.",
+  "_TRANSLATION_STATUS": "PLACEHOLDER. Machine drafted Persian awaiting review by the baker. Do not ship to production unreviewed. Every string below needs a native speaker pass for tone; marketing Persian does not survive literal translation.",
   "nav": {
     "home": "خانه",
     "gallery": "گالری",
     "cakes": "چه می‌سازیم",
     "about": "درباره ما",
     "contact": "تماس",
-    "order": "ثبت سفارش",
+    "design": "طراحی کیک",
     "openMenu": "باز کردن منو",
     "closeMenu": "بستن منو",
     "skipToContent": "رفتن به محتوا"
@@ -26,7 +26,7 @@
     "eyebrow": "کیک سفارشی، به سفارش شما",
     "heroTitle": "کیکی در خور جشن شما",
     "heroSubtitle": "کیک‌های سفارشی جشن، دست‌ساز و در تعداد محدود.",
-    "heroCtaPrimary": "ثبت سفارش",
+    "heroCtaPrimary": "طراحی کیک",
     "heroCtaSecondary": "دیدن گالری",
     "scrollCue": "پایین",
     "signatureTitle": "کارهای اخیر",
@@ -162,27 +162,16 @@
     "portraitAlt": "تصویر شیرینی‌پز در آشپزخانه",
     "recipeTrigger": "یک چیز هست که هرگز یادداشتش نکرده‌ام.",
     "recipeTitle": "یادداشت مادربزرگ",
-    "recipeBody": "TODO(content): یک ضرب‌المثل خانوادگی، تکه‌ای از یک دستور پخت، یا جمله‌ای که سینه‌به‌سینه رسیده. چیزی کوچک و واقعی — لازم نیست یک دستور کامل باشد، فقط باید ارزش پیدا کردن داشته باشد."
+    "recipeBody": "TODO(content): یک ضرب‌المثل خانوادگی، تکه‌ای از یک دستور پخت، یا جمله‌ای که سینه‌به‌سینه رسیده. چیزی کوچک و واقعی است. لازم نیست یک دستور کامل باشد، فقط باید ارزش پیدا کردن داشته باشد."
   },
-  "order": {
-    "title": "ثبت سفارش",
-    "intro": "از جشن‌تان بگویید تا شخصاً پاسخ دهیم، معمولاً ظرف یک روز.",
-    "seededTitle": "درباره این پرسیده‌اید",
-    "seededClear": "از نو شروع کنید",
-    "checklistTitle": "چه چیزهایی آماده داشته باشید",
-    "checklistIntro": "فرم کوتاه است. بهتر است این‌ها را در دسترس داشته باشید.",
-    "cta": "باز کردن فرم سفارش",
-    "ctaNote": "در تب جدید باز می‌شود.",
-    "orContact": "ترجیح می‌دهید پیام بدهید؟",
-    "notReadyTitle": "هنوز مطمئن نیستید؟",
-    "notReadyBody": "اول نگاهی به کارهای قبلی بیندازید؛ ساده‌ترین راه برای پیدا کردن مسیر است.",
-    "notReadyCta": "دیدن گالری",
-    "stepsTitle": "بعد از آن چه می‌شود"
-  },
-  "thanks": {
-    "title": "سپاسگزاریم",
-    "body": "درخواست شما ثبت شد. معمولاً ظرف یک روز شخصاً در تماس خواهیم بود.",
-    "cta": "بازگشت به گالری"
+  "design": {
+    "eyebrow": "بدون حساب کاربری، بدون پرداخت",
+    "title": "کیک خود را طراحی کنید",
+    "intro": "تقریباً همان چیزی را که در ذهن دارید بسازید و برای ما بفرستید. این سفارش نیست. فقط باعث می‌شود گفت‌وگو را با تصویری مشترک شروع کنیم.",
+    "cta": "طراحی کیک",
+    "redirectTitle": "این صفحه منتقل شده است",
+    "redirectBody": "سفارش‌ها اکنون از بخش طراحی کیک آغاز می‌شوند. در حال انتقال شما هستیم.",
+    "redirectCta": "رفتن به طراح کیک"
   },
   "contact": {
     "title": "در تماس باشید",

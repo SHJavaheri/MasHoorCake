@@ -46,7 +46,7 @@ export default function RootRedirectPage() {
       </head>
       <body>
         <main className="flex min-h-dvh flex-col items-center justify-center gap-6 p-8 text-center">
-          <p className="text-text-muted">Choose a language — انتخاب زبان</p>
+          <p className="text-text-muted">Choose a language / انتخاب زبان</p>
           <div className="flex gap-4">
             {locales.map((locale) => (
               <a

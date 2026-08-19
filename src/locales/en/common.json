@@ -5,7 +5,7 @@
     "cakes": "What We Make",
     "about": "About",
     "contact": "Contact",
-    "order": "Start an Order",
+    "design": "Design Your Cake",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "skipToContent": "Skip to content"
@@ -25,7 +25,7 @@
     "eyebrow": "Custom cakes, made to order",
     "heroTitle": "Cakes worth the occasion",
     "heroSubtitle": "Bespoke celebration cakes, baked and finished by hand in small batches.",
-    "heroCtaPrimary": "Start an Order",
+    "heroCtaPrimary": "Design Your Cake",
     "heroCtaSecondary": "See the Gallery",
     "scrollCue": "Scroll",
     "signatureTitle": "Recent work",
@@ -36,7 +36,7 @@
     "occasionsIntro": "Every celebration asks for something different.",
     "testimonialsTitle": "In their words",
     "ctaTitle": "Let's make something for your celebration",
-    "ctaBody": "Tell us the date and roughly how many people you're feeding. We'll take it from there.",
+    "ctaBody": "Put together roughly what you have in mind, send it over, and we'll take it from there. It isn't an order. It is simply a much better starting point than a blank message.",
     "viewAll": "View the full gallery"
   },
   "process": [
@@ -77,15 +77,15 @@
   "faq": [
     {
       "question": "How far in advance should I order?",
-      "answer": "Two weeks is comfortable for most cakes, and four to six weeks for weddings and larger tiered work. Shorter notice is sometimes possible — it's always worth asking."
+      "answer": "Two weeks is comfortable for most cakes, and four to six weeks for weddings and larger tiered work. Shorter notice is sometimes possible. It is always worth asking."
     },
     {
       "question": "Can you work around allergies?",
-      "answer": "Often, yes. Nut-free and dairy-free are usually workable with notice. This is a home kitchen that handles nuts, dairy, gluten, and eggs, so we cannot guarantee an allergen-free environment."
+      "answer": "Often, yes. Nut free and dairy free options are usually workable with notice. This is a home kitchen that handles nuts, dairy, gluten, and eggs, so we cannot guarantee an allergen free environment."
     },
     {
       "question": "Do you deliver?",
-      "answer": "Local delivery and setup can be arranged for tiered cakes. Single-tier cakes are usually collected."
+      "answer": "Local delivery and setup can be arranged for tiered cakes. Single tier cakes are usually collected."
     },
     {
       "question": "How does payment work?",
@@ -98,7 +98,7 @@
   ],
   "aboutStory": [
     "TODO(content): the baker's story goes here. Two or three paragraphs about how the bakery started, what drew you to cake specifically, and what you care about most when you're making one.",
-    "This is the highest-trust content on a home bakery site — customers are letting a stranger cook for their celebration. A photograph of you and a story in your own voice does more than any amount of design.",
+    "This is the most trusted content on a home bakery site. Customers are letting a stranger cook for their celebration. A photograph of you and a story in your own voice does more than any amount of design.",
     "The Persian influences in this work aren't decorative. Saffron, rosewater, cardamom, and pistachio are the flavours of a childhood, and the geometry comes from tilework worth looking at closely."
   ],
   "gallery": {
@@ -135,7 +135,7 @@
     "sizeIntro": "The question everyone asks first. Drag through the tiers to see how servings change.",
     "tiersLabel": "Tiers",
     "servingsLabel": "Serves roughly",
-    "sizeNote": "Portions assume standard dessert slices. Coffee-sized portions serve more.",
+    "sizeNote": "Portions assume standard dessert slices. Coffee sized portions serve more.",
     "flavourTitle": "The flavour library",
     "flavourIntro": "Choose a sponge and a filling, or tell us what you love and we'll suggest a pairing.",
     "flavourSponge": "Sponge",
@@ -152,7 +152,7 @@
     "depositLabel": "Deposit",
     "depositValue": "{percent}% to confirm your date",
     "allergenLabel": "Allergens",
-    "allergenValue": "This is a home kitchen that handles nuts, dairy, gluten, and eggs. We can often work around specific allergies with notice, but cannot guarantee an allergen-free environment."
+    "allergenValue": "This is a home kitchen that handles nuts, dairy, gluten, and eggs. We can often work around specific allergies with notice, but cannot guarantee an allergen free environment."
   },
   "about": {
     "title": "The Baker",
@@ -161,27 +161,16 @@
     "portraitAlt": "Portrait of the baker in the kitchen",
     "recipeTrigger": "There is one thing I've never written down.",
     "recipeTitle": "Grandmother's note",
-    "recipeBody": "TODO(content): a family saying, a scrap of a recipe, or a line of advice passed down. Something small and real — it does not need to be a whole recipe, only worth having found."
+    "recipeBody": "TODO(content): a family saying, a scrap of a recipe, or a line of advice passed down. Something small and real. It does not need to be a whole recipe, only worth having found."
   },
-  "order": {
-    "title": "Start an Order",
-    "intro": "Tell us about your celebration and we'll come back to you personally, usually within a day.",
-    "seededTitle": "You're enquiring about",
-    "seededClear": "Start fresh instead",
-    "checklistTitle": "What to have ready",
-    "checklistIntro": "The form is short. It helps to have these to hand.",
-    "cta": "Open the order form",
-    "ctaNote": "Opens in a new tab.",
-    "orContact": "Prefer to message instead?",
-    "notReadyTitle": "Not sure yet?",
-    "notReadyBody": "Have a look through previous work first — it's the easiest way to find a direction.",
-    "notReadyCta": "Browse the gallery",
-    "stepsTitle": "What happens next"
-  },
-  "thanks": {
-    "title": "Thank you",
-    "body": "Your enquiry is in. We'll be in touch personally, usually within a day.",
-    "cta": "Back to the gallery"
+  "design": {
+    "eyebrow": "No account, no checkout",
+    "title": "Design Your Cake",
+    "intro": "Put together roughly what you have in mind, then send it over. Nothing here is an order. It just means we both start the conversation looking at the same cake.",
+    "cta": "Design your cake",
+    "redirectTitle": "This page has moved",
+    "redirectBody": "Orders now start in the cake designer. Taking you there now.",
+    "redirectCta": "Go to the designer"
   },
   "contact": {
     "title": "Get in touch",

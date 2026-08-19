@@ -1,7 +1,8 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Images, MessageCircle, PenLine } from "lucide-react";
 
 import { useScrollDirection } from "@/hooks/useScrollDirection";
@@ -17,15 +18,28 @@ import { transition } from "@/lib/motion/tokens";
  * page with a toolbar is exactly the wrong first impression.
  *
  * Sits above the iOS home indicator via `env(safe-area-inset-bottom)`.
+ *
+ * Hidden on /design, which has its own bottom bar carrying the running estimate
+ * — two stacked bars would eat a third of a phone screen. Checked here rather
+ * than passed down as a prop because the layout that mounts this is a Server
+ * Component and cannot read the pathname.
  */
 export function StickyActionBar({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const { isScrolled } = useScrollDirection();
+  const pathname = usePathname() ?? "";
 
   const actions = [
     { href: localePath(locale, "/gallery"), label: dict.nav.gallery, Icon: Images },
-    { href: localePath(locale, "/order"), label: dict.nav.order, Icon: PenLine, primary: true },
+    {
+      href: localePath(locale, "/design"),
+      label: dict.nav.design,
+      Icon: PenLine,
+      primary: true,
+    },
     { href: localePath(locale, "/contact"), label: dict.nav.contact, Icon: MessageCircle },
   ];
+
+  if (pathname.includes("/design")) return null;
 
   return (
     <motion.div

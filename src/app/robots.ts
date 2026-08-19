@@ -12,9 +12,10 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Confirmation pages have no search value and only dilute the crawl.
+      // /order is a redirect stub kept for links already in the wild; it has no
+      // search value of its own and would compete with /design.
       // Paths in robots.txt are relative to the host, so they carry basePath.
-      disallow: locales.map((locale) => `${basePath}${localePath(locale, "/thanks")}`),
+      disallow: locales.map((locale) => `${basePath}${localePath(locale, "/order")}`),
     },
     sitemap: absoluteUrl("/sitemap.xml"),
   };

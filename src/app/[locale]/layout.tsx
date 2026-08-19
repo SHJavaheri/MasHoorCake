@@ -42,8 +42,8 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(site.url),
     title: {
-      default: `${site.name} — ${site.tagline[locale]}`,
-      template: `%s — ${site.name}`,
+      default: `${site.name}: ${site.tagline[locale]}`,
+      template: `%s: ${site.name}`,
     },
     description: site.description[locale],
     alternates: {
@@ -58,7 +58,7 @@ export async function generateMetadata({
       type: "website",
       siteName: site.name,
       locale: localeHreflang[locale],
-      title: `${site.name} — ${site.tagline[locale]}`,
+      title: `${site.name}: ${site.tagline[locale]}`,
       description: site.description[locale],
     },
     twitter: { card: "summary_large_image" },
@@ -88,8 +88,9 @@ export default async function LocaleLayout({
     >
       <head>
         <ThemeScript />
-        <meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#1a1512" media="(prefers-color-scheme: dark)" />
+        {/* Must track --bg in globals.css; these cannot read CSS variables. */}
+        <meta name="theme-color" content="#fafcfb" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0f1513" media="(prefers-color-scheme: dark)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -1,0 +1,120 @@
+import type { CakeOption } from "@/content/cake-maker/schema";
+
+/**
+ * Sponge flavours.
+ *
+ * `taxonomySlug` links each one to the gallery taxonomy in ../../taxonomy.ts,
+ * so "pistachio" in the designer and "pistachio" in the gallery filters are the
+ * same thing. Keep them in step when adding a flavour to either side.
+ *
+ * `visual.fill` is the baked crumb colour — see the note in ../schema.ts about
+ * why these are literal hex rather than theme tokens.
+ *
+ * TODO(content): confirm the menu. TODO(pricing): all deltas are placeholders.
+ */
+export const flavourOptions: CakeOption[] = [
+  {
+    id: "vanilla",
+    label: { en: "Vanilla Bean" },
+    description: { en: "Madagascar bean, seeds visible." },
+    taxonomySlug: "vanilla",
+    priceDelta: 0,
+    pricePerServing: 0,
+    allergens: ["dairy", "gluten", "egg"],
+    requires: [],
+    featured: true,
+    swatch: "#f2e3c2",
+    visual: { role: "sponge", fill: "#f2e3c2", fillAlt: "#e6d2a8" },
+  },
+  {
+    id: "chocolate",
+    label: { en: "Dark Chocolate" },
+    description: { en: "70% couverture, not cocoa powder." },
+    taxonomySlug: "chocolate",
+    priceDelta: 0,
+    pricePerServing: 0.5,
+    allergens: ["dairy", "gluten", "egg", "soy"],
+    requires: [],
+    featured: true,
+    swatch: "#5b3a2a",
+    visual: { role: "sponge", fill: "#5b3a2a", fillAlt: "#4a2e21" },
+  },
+  {
+    id: "pistachio",
+    label: { en: "Pistachio" },
+    description: { en: "Ground fresh, never extract." },
+    taxonomySlug: "pistachio",
+    priceDelta: 0,
+    pricePerServing: 1,
+    allergens: ["nuts", "dairy", "gluten", "egg"],
+    requires: [],
+    featured: true,
+    swatch: "#cfd9a4",
+    visual: { role: "sponge", fill: "#cfd9a4", fillAlt: "#bcc78e" },
+  },
+  {
+    id: "saffron",
+    label: { en: "Saffron" },
+    description: { en: "Steeped rather than powdered. Floral and warm." },
+    taxonomySlug: "saffron",
+    priceDelta: 0,
+    pricePerServing: 1.25,
+    allergens: ["dairy", "gluten", "egg"],
+    requires: [],
+    featured: false,
+    swatch: "#f0c877",
+    visual: { role: "sponge", fill: "#f0c877", fillAlt: "#e0b45c" },
+  },
+  {
+    id: "rosewater",
+    label: { en: "Rosewater" },
+    description: { en: "Used with restraint, so it perfumes rather than dominates." },
+    taxonomySlug: "rosewater",
+    priceDelta: 0,
+    pricePerServing: 0.5,
+    allergens: ["dairy", "gluten", "egg"],
+    requires: [],
+    featured: false,
+    swatch: "#f7e0e2",
+    visual: { role: "sponge", fill: "#f7e0e2", fillAlt: "#eccdd1" },
+  },
+  {
+    id: "cardamom",
+    label: { en: "Cardamom" },
+    description: { en: "Freshly ground green pods." },
+    taxonomySlug: "cardamom",
+    priceDelta: 0,
+    pricePerServing: 0.5,
+    allergens: ["dairy", "gluten", "egg"],
+    requires: [],
+    featured: false,
+    swatch: "#e2d3b0",
+    visual: { role: "sponge", fill: "#e2d3b0", fillAlt: "#cfbe98" },
+  },
+  {
+    id: "citrus",
+    label: { en: "Orange Blossom" },
+    description: { en: "Bright and clean against richer fillings." },
+    taxonomySlug: "citrus",
+    priceDelta: 0,
+    pricePerServing: 0,
+    allergens: ["dairy", "gluten", "egg"],
+    requires: [],
+    featured: false,
+    swatch: "#f7d9a0",
+    visual: { role: "sponge", fill: "#f7d9a0", fillAlt: "#e8c584" },
+  },
+  {
+    id: "coffee",
+    label: { en: "Coffee" },
+    description: { en: "Espresso soaked sponge." },
+    taxonomySlug: "coffee",
+    priceDelta: 0,
+    pricePerServing: 0.5,
+    allergens: ["dairy", "gluten", "egg"],
+    requires: [],
+    featured: false,
+    swatch: "#8a6448",
+    visual: { role: "sponge", fill: "#8a6448", fillAlt: "#72523a" },
+  },
+];

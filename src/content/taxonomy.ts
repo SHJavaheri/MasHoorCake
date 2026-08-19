@@ -58,7 +58,7 @@ export const flavours: TaxonomyTerm[] = [
   {
     slug: "coffee",
     label: { en: "Coffee", fa: "قهوه" },
-    description: { en: "Espresso-soaked sponge.", fa: "کیک آغشته به اسپرسو." },
+    description: { en: "Espresso soaked sponge.", fa: "کیک آغشته به اسپرسو." },
   },
 ];
 

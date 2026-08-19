@@ -2,8 +2,17 @@
 
 Marketing and inquiry website for a small home bakery specialising in custom cakes.
 
-Built as a **fully static site** — no server, no database, no accounts. Orders are
-submitted through a Google Form and finalised directly with the baker.
+Built as a **fully static site** — no server, no database, no accounts.
+
+The site does three things: it shows past work, it lets a customer design a cake
+in the browser (`/design`), and it turns that design into a **Cake Request
+Summary** they send to the baker over WhatsApp, Telegram, or email — or download
+as a PDF.
+
+**It is not a shop.** Nothing is ordered, no payment is taken, and no price is
+final: every figure shown is a clearly-labelled estimate that the baker confirms
+herself. The Cake Maker exists so the customer can say exactly what they want
+before the conversation starts, not to replace it.
 
 ## Getting started
 
@@ -65,6 +74,12 @@ Built and deployed: design system in two themes, bilingual EN/FA with RTL, the
 gallery with filters and detail modal, all six pages, the motion vocabulary, and the
 Easter eggs.
 
-**Everything customer-facing is still placeholder.** Branding, photography, copy,
-pricing, contact details, the Google Form link, and the Persian translations are all
-marked `TODO(content)` — search the project for that string to find them.
+**Everything customer-facing is still placeholder.** Photography, copy, contact
+details, and the Persian translations are marked `TODO(content)`; every price in
+the Cake Maker is marked `TODO(pricing)` — search the project for either string
+to find them. Prices live in `src/content/cake-maker/pricing.ts` and on the
+individual options, and nowhere else. See `CONTENT-GUIDE.md`.
+
+The Cake Maker itself ships **English-only** for now. Its copy is authored
+English-first through `src/content/l10n.ts`, so Persian drops in later without a
+refactor — the rest of the site is already fully bilingual.
