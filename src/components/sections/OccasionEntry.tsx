@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Reveal, RevealItem, Stagger } from "@/components/motion/Reveal";
 import { Container, Section } from "@/components/ui/Container";
-import { KhatamStar } from "@/components/ui/Ornament";
+import { LogoSilhouetteMark } from "@/components/ui/Ornament";
 import { occasions } from "@/content/taxonomy";
 import { getAllCakes } from "@/lib/gallery/cakes";
 import { localePath, type Locale } from "@/lib/i18n/config";
@@ -34,7 +34,7 @@ export function OccasionEntry({ locale, dict }: { locale: Locale; dict: Dictiona
   if (featured.length === 0) return null;
 
   return (
-    <Section className="bg-bg-subtle">
+    <Section className="bg-secondary-subtle/50">
       <Container>
         <Reveal>
           <h2 className="max-w-2xl text-[length:var(--text-display-md)]">
@@ -51,7 +51,7 @@ export function OccasionEntry({ locale, dict }: { locale: Locale; dict: Dictiona
                 className="group border-border bg-surface hover:border-accent flex items-center justify-between gap-4 rounded-2xl border px-6 py-5 transition-all duration-[var(--duration-fast)] hover:shadow-[var(--shadow-md)]"
               >
                 <span className="flex items-center gap-3">
-                  <KhatamStar className="text-accent size-5 opacity-60 transition-opacity group-hover:opacity-100" />
+                  <LogoSilhouetteMark className="size-5 opacity-70 transition-opacity group-hover:opacity-100" />
                   <span className="font-display text-[length:var(--text-title)]">
                     {occasion.label[locale]}
                   </span>

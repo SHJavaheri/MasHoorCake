@@ -8,7 +8,7 @@ import { useState } from "react";
 
 import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher";
 import { Button } from "@/components/ui/Button";
-import { KhatamPattern } from "@/components/ui/Ornament";
+import { LogoSilhouettePattern } from "@/components/ui/Ornament";
 import { navRoutes } from "@/config/navigation";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
@@ -72,11 +72,11 @@ export function MobileNav({ locale, dict }: { locale: Locale; dict: Dictionary }
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -16 }}
                 transition={{ duration: 0.32, ease: easeEntrance }}
-                className="bg-bg fixed inset-0 z-50 flex flex-col overflow-y-auto"
+                className="bg-secondary-subtle/30 fixed inset-0 z-50 flex flex-col overflow-y-auto"
               >
                 <Dialog.Title className="sr-only">{dict.nav.openMenu}</Dialog.Title>
 
-                <KhatamPattern className="text-accent" opacity={0.04} />
+                <LogoSilhouettePattern opacity={0.16} />
 
                 <div className="relative flex h-20 shrink-0 items-center justify-end px-5 sm:px-8">
                   <Dialog.Close asChild>

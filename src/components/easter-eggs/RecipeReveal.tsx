@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 
-import { KhatamStar } from "@/components/ui/Ornament";
+import { LogoSilhouetteMark } from "@/components/ui/Ornament";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { spring } from "@/lib/motion/tokens";
 
@@ -29,7 +29,7 @@ export function RecipeReveal({ dict }: { dict: Dictionary }) {
         aria-expanded={open}
         className="group text-text-muted decoration-accent/40 hover:text-accent inline-flex items-center gap-2 underline decoration-dotted underline-offset-[6px] transition-colors"
       >
-        <KhatamStar className="text-accent size-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
+        <LogoSilhouetteMark className="size-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
         {dict.about.recipeTrigger}
       </button>
 

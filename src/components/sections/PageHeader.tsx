@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { KhatamPattern } from "@/components/ui/Ornament";
+import { LogoSilhouettePattern } from "@/components/ui/Ornament";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
@@ -19,8 +19,8 @@ export function PageHeader({
   intro?: string;
 }) {
   return (
-    <header className="border-border bg-secondary-subtle/30 relative overflow-hidden border-b pt-32 pb-16 sm:pt-40 sm:pb-24">
-      <KhatamPattern className="text-secondary" opacity={0.06} />
+    <header className="border-border bg-secondary-subtle/60 relative overflow-hidden border-b pt-32 pb-16 sm:pt-40 sm:pb-24">
+      <LogoSilhouettePattern opacity={0.18} />
       <Container className="relative">
         <Reveal>
           {eyebrow && (

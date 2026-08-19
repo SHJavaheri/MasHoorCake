@@ -8,7 +8,7 @@ import { CakeModal } from "@/components/gallery/CakeModal";
 import { GalleryCard } from "@/components/gallery/GalleryCard";
 import { GalleryFilters } from "@/components/gallery/GalleryFilters";
 import { Button } from "@/components/ui/Button";
-import { KhatamStar } from "@/components/ui/Ornament";
+import { LogoSilhouetteMark } from "@/components/ui/Ornament";
 import type { Cake } from "@/content/schema";
 import { setUrlSearch, useUrlSearch } from "@/hooks/useUrlSearch";
 import {
@@ -129,7 +129,7 @@ export function GalleryExperience({
               transition={transition.entrance}
               className="border-border flex flex-col items-center gap-5 rounded-[2rem] border border-dashed px-8 py-24 text-center"
             >
-              <KhatamStar className="text-accent size-10 opacity-50" />
+              <LogoSilhouetteMark className="size-10 opacity-75" />
               <p className="text-text-muted max-w-sm">{dict.gallery.empty}</p>
               <Button variant="secondary" size="sm" onClick={handleClear}>
                 {dict.gallery.clearFilters}

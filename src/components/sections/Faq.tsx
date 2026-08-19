@@ -16,7 +16,7 @@ import type { Dictionary } from "@/lib/i18n/dictionaries";
  */
 export function Faq({ dict }: { dict: Dictionary }) {
   return (
-    <Section className="bg-bg-subtle">
+    <Section className="bg-secondary-subtle/50">
       <Container width="narrow">
         <Reveal>
           <h2 className="text-[length:var(--text-display-sm)]">{dict.contact.faqTitle}</h2>

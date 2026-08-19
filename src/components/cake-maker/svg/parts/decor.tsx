@@ -117,18 +117,21 @@ export function Rose(props: PointPartProps) {
   );
 }
 
-export function Khatam(props: PointPartProps) {
-  // The eight-point star from Persian marquetry, the same motif the rest of
-  // the site uses as an ornament.
-  const points = Array.from({ length: 16 }, (_, i) => {
-    const radius = i % 2 === 0 ? 9 : 4;
-    const angle = (i / 16) * Math.PI * 2 - Math.PI / 2;
-    return `${(Math.cos(angle) * radius).toFixed(2)},${(Math.sin(angle) * radius).toFixed(2)}`;
-  }).join(" ");
-
+export function ScallopMotif(props: PointPartProps) {
   return (
     <At {...props}>
-      <polygon points={points} fill={props.fill} />
+      <g fill="none" stroke={props.fill} strokeWidth="1.35">
+        <circle r="6" />
+        {Array.from({ length: 8 }, (_, index) => (
+          <circle
+            key={index}
+            cx="0"
+            cy="-6"
+            r="3.4"
+            transform={`rotate(${index * 45})`}
+          />
+        ))}
+      </g>
     </At>
   );
 }

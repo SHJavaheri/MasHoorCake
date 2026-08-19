@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 import { Button } from "@/components/ui/Button";
 import { CakeImage } from "@/components/ui/CakeImage";
-import { KhatamStar } from "@/components/ui/Ornament";
+import { LogoSilhouetteMark } from "@/components/ui/Ornament";
 import type { Cake } from "@/content/schema";
 import { imageKey } from "@/lib/gallery/cakes";
 import { localePath, type Locale } from "@/lib/i18n/config";
@@ -76,7 +76,7 @@ export function Hero({
           transition={{ duration: 0.6, ease: easeEntrance }}
           className="font-display text-on-scrim/80 flex items-center gap-3 text-xs tracking-[0.3em] uppercase"
         >
-          <KhatamStar className="text-secondary size-4" />
+          <LogoSilhouetteMark className="size-4" />
           {dict.home.eyebrow}
         </motion.p>
 

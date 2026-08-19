@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { CakeMaker } from "@/components/cake-maker/CakeMaker";
 import { PageHeader } from "@/components/sections/PageHeader";
-import { Container, Section } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Container";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 
@@ -34,13 +34,11 @@ export default async function DesignPage({ params }: { params: Promise<PageParam
 
   return (
     <>
-      <Container width="wide">
-        <PageHeader
-          eyebrow={dict.design.eyebrow}
-          title={dict.design.title}
-          intro={dict.design.intro}
-        />
-      </Container>
+      <PageHeader
+        eyebrow={dict.design.eyebrow}
+        title={dict.design.title}
+        intro={dict.design.intro}
+      />
 
       {/*
        * The Cake Maker is a client island: everything below here needs the
