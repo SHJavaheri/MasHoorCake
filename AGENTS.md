@@ -8,7 +8,7 @@ The site does three things:
 1. Showcases past work (`/gallery`, `/cakes`, `/about`).
 2. Lets a customer configure a cake visually (`/design` — the **Cake Maker**).
 3. Produces a **Cake Request Summary** they download, print, or send to the baker
-   over WhatsApp / Telegram / email.
+   over WhatsApp or email.
 
 **This is not ecommerce.** No orders, no checkout, no payment, and no confirmed
 price — only clearly-labelled estimates. The Cake Maker's job is to let the

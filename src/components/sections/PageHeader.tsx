@@ -19,8 +19,8 @@ export function PageHeader({
   intro?: string;
 }) {
   return (
-    <header className="border-border bg-bg-subtle relative overflow-hidden border-b pt-32 pb-16 sm:pt-40 sm:pb-24">
-      <KhatamPattern className="text-accent" opacity={0.045} />
+    <header className="border-border bg-secondary-subtle/30 relative overflow-hidden border-b pt-32 pb-16 sm:pt-40 sm:pb-24">
+      <KhatamPattern className="text-secondary" opacity={0.06} />
       <Container className="relative">
         <Reveal>
           {eyebrow && (

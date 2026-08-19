@@ -22,7 +22,7 @@ ordering logic keys off that flag.
 
 There is no order form and no Google Form any more. A customer designs a cake at
 `/design`, and the site produces a **Cake Request Summary** they send you over
-WhatsApp, Telegram, or email — or download as a PDF. Nothing is ever ordered or
+WhatsApp or email — or download as a PDF. Nothing is ever ordered or
 paid for on the site.
 
 ### Prices

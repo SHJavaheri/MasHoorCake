@@ -1,7 +1,7 @@
 import { Mail, Phone } from "lucide-react";
 import type { ComponentType, SVGProps } from "react";
 
-import { InstagramIcon, TelegramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
+import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
 import { site } from "@/config/site";
 
 export type ContactChannel = {
@@ -41,15 +41,6 @@ export function contactChannels(greeting: string): ContactChannel[] {
       label: "WhatsApp",
       href: `${contact.whatsapp.url}?text=${encodeURIComponent(greeting)}`,
       Icon: WhatsAppIcon,
-    });
-  }
-
-  if (contact.telegram.enabled) {
-    channels.push({
-      id: "telegram",
-      label: "Telegram",
-      href: contact.telegram.url,
-      Icon: TelegramIcon,
     });
   }
 

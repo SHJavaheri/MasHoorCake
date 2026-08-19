@@ -49,21 +49,3 @@ export function WhatsAppIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-export function TelegramIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M21 4.5 2.8 11.3c-.6.2-.6 1 0 1.2l4.6 1.5L20 5.6" />
-      <path d="M7.4 14 9 19.3c.2.6 1 .7 1.3.2l2.3-3.1L21 4.5" />
-      <path d="m9 19.5 3.6-3.1" />
-    </svg>
-  );
-}

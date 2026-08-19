@@ -17,7 +17,6 @@ import { absoluteUrl as absolute } from "./url";
 export function organizationJsonLd(locale: Locale) {
   const socials = [
     site.contact.instagram.enabled ? site.contact.instagram.url : null,
-    site.contact.telegram.enabled ? site.contact.telegram.url : null,
   ].filter(Boolean);
 
   return {

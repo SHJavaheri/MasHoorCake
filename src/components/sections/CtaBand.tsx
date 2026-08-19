@@ -8,8 +8,8 @@ import type { Dictionary } from "@/lib/i18n/dictionaries";
 /** Closing call to action. One action only â€” a choice here costs conversions. */
 export function CtaBand({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
-    <Section className="border-border bg-surface relative overflow-hidden border-y">
-      <KhatamPattern className="text-accent" opacity={0.06} />
+    <Section className="border-border bg-secondary-subtle/30 relative overflow-hidden border-y">
+      <KhatamPattern className="text-secondary" opacity={0.08} />
       <Container className="relative flex flex-col items-center text-center">
         <Reveal>
           <h2 className="max-w-2xl text-[length:var(--text-display-md)]">

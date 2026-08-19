@@ -44,7 +44,6 @@ export const site = {
       url: "https://instagram.com/placeholder",
     },
     whatsapp: { enabled: true, number: "+10000000000", url: "https://wa.me/10000000000" },
-    telegram: { enabled: true, handle: "@placeholder", url: "https://t.me/placeholder" },
     email: { enabled: true, address: "hello@example.com" },
     phone: { enabled: false, number: "+1 000 000 0000" },
   },

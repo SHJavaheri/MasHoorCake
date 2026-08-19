@@ -72,7 +72,7 @@ export function SignatureTrio({
                     />
                   </div>
                   <div className="mt-5">
-                    <p className="font-display text-text-subtle text-xs tracking-[0.2em] uppercase">
+                    <p className="font-display text-secondary text-xs tracking-[0.2em] uppercase">
                       {occasion?.label[locale]}
                     </p>
                     <h3 className="group-hover:text-accent mt-2 text-[length:var(--text-title)] transition-colors">

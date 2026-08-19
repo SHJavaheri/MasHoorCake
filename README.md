@@ -6,7 +6,7 @@ Built as a **fully static site** — no server, no database, no accounts.
 
 The site does three things: it shows past work, it lets a customer design a cake
 in the browser (`/design`), and it turns that design into a **Cake Request
-Summary** they send to the baker over WhatsApp, Telegram, or email — or download
+Summary** they send to the baker over WhatsApp or email — or download
 as a PDF.
 
 **It is not a shop.** Nothing is ordered, no payment is taken, and no price is

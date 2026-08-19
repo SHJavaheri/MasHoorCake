@@ -1,6 +1,6 @@
 import type { ComponentType, SVGProps } from "react";
 
-import { InstagramIcon, TelegramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
+import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
 import { site } from "@/config/site";
 
 import type { SummaryModel } from "@/lib/cake-maker/summary";
@@ -18,13 +18,13 @@ import type { SummaryModel } from "@/lib/cake-maker/summary";
 
 /**
  * After encodeURIComponent a message this long lands near ~2000 URL characters,
- * which is the safe ceiling for `mailto:` on Windows and Outlook. WhatsApp and
- * Telegram tolerate far more, so one limit serves all three targets.
+ * which is the safe ceiling for `mailto:` on Windows and Outlook. The same
+ * limit also keeps WhatsApp messages comfortably shareable.
  */
 export const MESSAGE_MAX = 1500;
 
 export type ShareTarget = {
-  id: "whatsapp" | "telegram" | "email" | "copy" | "native";
+  id: "whatsapp" | "email" | "copy" | "native";
   label: string;
   /** Absent for `copy` and `native`, which are actions rather than links. */
   href?: string;
@@ -103,17 +103,6 @@ export function shareTargets(
       label: "WhatsApp",
       href: `${contact.whatsapp.url}?text=${encoded}`,
       Icon: WhatsAppIcon,
-    });
-  }
-
-  if (contact.telegram.enabled) {
-    // Telegram's share endpoint requires a `url`; the design link is exactly
-    // the right thing to put there.
-    targets.push({
-      id: "telegram",
-      label: "Telegram",
-      href: `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encoded}`,
-      Icon: TelegramIcon,
     });
   }
 

@@ -76,7 +76,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 {isActive && (
                   <motion.span
                     layoutId="nav-active"
-                    className="bg-accent absolute inset-x-4 -bottom-0.5 h-px"
+                    className="bg-secondary absolute inset-x-4 -bottom-0.5 h-px"
                     transition={transition.fast}
                   />
                 )}

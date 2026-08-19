@@ -76,7 +76,7 @@ export function Hero({
           transition={{ duration: 0.6, ease: easeEntrance }}
           className="font-display text-on-scrim/80 flex items-center gap-3 text-xs tracking-[0.3em] uppercase"
         >
-          <KhatamStar className="size-4" />
+          <KhatamStar className="text-secondary size-4" />
           {dict.home.eyebrow}
         </motion.p>
 
